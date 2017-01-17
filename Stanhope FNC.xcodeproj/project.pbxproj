@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF5E02FF1E2E264A0006EECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */; };
+		BF5E03011E2E264A0006EECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03001E2E264A0006EECF /* ViewController.swift */; };
+		BF5E03041E2E264A0006EECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5E03021E2E264A0006EECF /* Main.storyboard */; };
+		BF5E03071E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03051E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld */; };
+		BF5E03091E2E264A0006EECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5E03081E2E264A0006EECF /* Assets.xcassets */; };
+		BF5E030C1E2E264A0006EECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5E030A1E2E264A0006EECF /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF5E02FB1E2E264A0006EECF /* Stanhope FNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stanhope FNC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF5E03001E2E264A0006EECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF5E03031E2E264A0006EECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF5E03061E2E264A0006EECF /* Stanhope_FNC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stanhope_FNC.xcdatamodel; sourceTree = "<group>"; };
+		BF5E03081E2E264A0006EECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF5E030B1E2E264A0006EECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF5E030D1E2E264A0006EECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF5E02F81E2E264A0006EECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF5E02F21E2E264A0006EECF = {
+			isa = PBXGroup;
+			children = (
+				BF5E02FD1E2E264A0006EECF /* Stanhope FNC */,
+				BF5E02FC1E2E264A0006EECF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF5E02FC1E2E264A0006EECF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF5E02FB1E2E264A0006EECF /* Stanhope FNC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF5E02FD1E2E264A0006EECF /* Stanhope FNC */ = {
+			isa = PBXGroup;
+			children = (
+				BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */,
+				BF5E03001E2E264A0006EECF /* ViewController.swift */,
+				BF5E03021E2E264A0006EECF /* Main.storyboard */,
+				BF5E03081E2E264A0006EECF /* Assets.xcassets */,
+				BF5E030A1E2E264A0006EECF /* LaunchScreen.storyboard */,
+				BF5E030D1E2E264A0006EECF /* Info.plist */,
+				BF5E03051E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld */,
+			);
+			path = "Stanhope FNC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF5E02FA1E2E264A0006EECF /* Stanhope FNC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5E03101E2E264A0006EECF /* Build configuration list for PBXNativeTarget "Stanhope FNC" */;
+			buildPhases = (
+				BF5E02F71E2E264A0006EECF /* Sources */,
+				BF5E02F81E2E264A0006EECF /* Frameworks */,
+				BF5E02F91E2E264A0006EECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stanhope FNC";
+			productName = "Stanhope FNC";
+			productReference = BF5E02FB1E2E264A0006EECF /* Stanhope FNC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF5E02F31E2E264A0006EECF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Jason Leocata";
+				TargetAttributes = {
+					BF5E02FA1E2E264A0006EECF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = H3A77962QT;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BF5E02F61E2E264A0006EECF /* Build configuration list for PBXProject "Stanhope FNC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF5E02F21E2E264A0006EECF;
+			productRefGroup = BF5E02FC1E2E264A0006EECF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF5E02FA1E2E264A0006EECF /* Stanhope FNC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF5E02F91E2E264A0006EECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5E030C1E2E264A0006EECF /* LaunchScreen.storyboard in Resources */,
+				BF5E03091E2E264A0006EECF /* Assets.xcassets in Resources */,
+				BF5E03041E2E264A0006EECF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF5E02F71E2E264A0006EECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5E03071E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld in Sources */,
+				BF5E03011E2E264A0006EECF /* ViewController.swift in Sources */,
+				BF5E02FF1E2E264A0006EECF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF5E03021E2E264A0006EECF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5E03031E2E264A0006EECF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF5E030A1E2E264A0006EECF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5E030B1E2E264A0006EECF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF5E030E1E2E264A0006EECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF5E030F1E2E264A0006EECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF5E03111E2E264A0006EECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H3A77962QT;
+				INFOPLIST_FILE = "Stanhope FNC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.jasonleocata.Stanhope-FNC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BF5E03121E2E264A0006EECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H3A77962QT;
+				INFOPLIST_FILE = "Stanhope FNC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.com.jasonleocata.Stanhope-FNC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF5E02F61E2E264A0006EECF /* Build configuration list for PBXProject "Stanhope FNC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5E030E1E2E264A0006EECF /* Debug */,
+				BF5E030F1E2E264A0006EECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5E03101E2E264A0006EECF /* Build configuration list for PBXNativeTarget "Stanhope FNC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5E03111E2E264A0006EECF /* Debug */,
+				BF5E03121E2E264A0006EECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF5E03051E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF5E03061E2E264A0006EECF /* Stanhope_FNC.xcdatamodel */,
+			);
+			currentVersion = BF5E03061E2E264A0006EECF /* Stanhope_FNC.xcdatamodel */;
+			path = Stanhope_FNC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BF5E02F31E2E264A0006EECF /* Project object */;
+}
