@@ -7,15 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		107FC68845C6EA607EB37291 /* Pods_Stanhope_FNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE271A8AECA0A4A189BA59C5 /* Pods_Stanhope_FNC.framework */; };
+		BF5933151E395EB10015428B /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933141E395EB10015428B /* EventDetailVC.swift */; };
+		BF5933171E3966130015428B /* EventDetailTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933161E3966130015428B /* EventDetailTableVC.swift */; };
+		BF59331F1E397A800015428B /* WebViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59331E1E397A800015428B /* WebViewDetailVC.swift */; };
 		BF5E02FF1E2E264A0006EECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */; };
 		BF5E03011E2E264A0006EECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03001E2E264A0006EECF /* ViewController.swift */; };
 		BF5E03041E2E264A0006EECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5E03021E2E264A0006EECF /* Main.storyboard */; };
 		BF5E03071E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03051E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld */; };
 		BF5E03091E2E264A0006EECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5E03081E2E264A0006EECF /* Assets.xcassets */; };
 		BF5E030C1E2E264A0006EECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5E030A1E2E264A0006EECF /* LaunchScreen.storyboard */; };
+		BF5E03191E2E277D0006EECF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF5E03181E2E277D0006EECF /* GoogleService-Info.plist */; };
+		BF5E031B1E2E2BFC0006EECF /* LargeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E031A1E2E2BFC0006EECF /* LargeTextField.swift */; };
+		BF5E031D1E2E2D8D0006EECF /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E031C1E2E2D8D0006EECF /* LargeButton.swift */; };
+		BF5E031F1E2E2FDA0006EECF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E031E1E2E2FDA0006EECF /* DataService.swift */; };
+		BF5E03211E2E32920006EECF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03201E2E32920006EECF /* Constants.swift */; };
+		BF5E03231E2F597F0006EECF /* NewsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03221E2F597F0006EECF /* NewsTableVC.swift */; };
+		BF5E03251E30BAD10006EECF /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03241E30BAD10006EECF /* News.swift */; };
+		BF5E03271E30BB5E0006EECF /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03261E30BB5E0006EECF /* NewsCell.swift */; };
+		BF75D7A11E30CD3A0060F0AA /* NewsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7A01E30CD3A0060F0AA /* NewsDetailVC.swift */; };
+		BF75D7AA1E30D4940060F0AA /* RoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7A91E30D4940060F0AA /* RoundCell.swift */; };
+		BF75D7AC1E30D4F20060F0AA /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7AB1E30D4F20060F0AA /* Round.swift */; };
+		BF75D7AE1E30D6590060F0AA /* RoundsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7AD1E30D6590060F0AA /* RoundsTableVC.swift */; };
+		BF75D7AF1E3240F50060F0AA /* Dosis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF75D7A21E30D2660060F0AA /* Dosis-Bold.otf */; };
+		BF75D7B01E3240F80060F0AA /* Dosis-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF75D7A31E30D2660060F0AA /* Dosis-ExtraBold.otf */; };
+		BF75D7B11E3240FF0060F0AA /* Dosis-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF75D7A41E30D2660060F0AA /* Dosis-ExtraLight.otf */; };
+		BF75D7B21E3240FF0060F0AA /* Dosis-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF75D7A51E30D2660060F0AA /* Dosis-Light.otf */; };
+		BF75D7B31E3240FF0060F0AA /* Dosis-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF75D7A61E30D2660060F0AA /* Dosis-Medium.otf */; };
+		BF75D7B41E3240FF0060F0AA /* Dosis-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF75D7A71E30D2660060F0AA /* Dosis-Regular.otf */; };
+		BF75D7B51E3240FF0060F0AA /* Dosis-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BF75D7A81E30D2660060F0AA /* Dosis-SemiBold.otf */; };
+		BF75D7B71E32BA8A0060F0AA /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7B61E32BA8A0060F0AA /* Match.swift */; };
+		BF75D7B91E32BBDE0060F0AA /* RoundDetailTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7B81E32BBDE0060F0AA /* RoundDetailTableVC.swift */; };
+		BF75D7BB1E32C21A0060F0AA /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7BA1E32C21A0060F0AA /* MatchCell.swift */; };
+		BF75D7BD1E32D7780060F0AA /* LaddersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7BC1E32D7780060F0AA /* LaddersVC.swift */; };
+		BF75D7BF1E32D9520060F0AA /* Grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7BE1E32D9520060F0AA /* Grade.swift */; };
+		BF75D7C11E32E05B0060F0AA /* GradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7C01E32E05B0060F0AA /* GradeCell.swift */; };
+		BF75D7C31E35FBA00060F0AA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7C21E35FBA00060F0AA /* Event.swift */; };
+		BF75D7C51E35FBC50060F0AA /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7C41E35FBC50060F0AA /* EventCell.swift */; };
+		BF75D7C71E35FD130060F0AA /* EventTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7C61E35FD130060F0AA /* EventTableVC.swift */; };
+		BF75D7C91E360F2C0060F0AA /* MoreTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7C81E360F2C0060F0AA /* MoreTableVC.swift */; };
+		BF75D7CB1E361B170060F0AA /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7CA1E361B170060F0AA /* SocialNetworks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4A3877052992BDC9EED4FC6 /* Pods-Stanhope FNC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stanhope FNC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stanhope FNC/Pods-Stanhope FNC.release.xcconfig"; sourceTree = "<group>"; };
+		BF5933141E395EB10015428B /* EventDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
+		BF5933161E3966130015428B /* EventDetailTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailTableVC.swift; sourceTree = "<group>"; };
+		BF59331E1E397A800015428B /* WebViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDetailVC.swift; sourceTree = "<group>"; };
 		BF5E02FB1E2E264A0006EECF /* Stanhope FNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stanhope FNC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF5E03001E2E264A0006EECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +62,38 @@
 		BF5E03081E2E264A0006EECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF5E030B1E2E264A0006EECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5E030D1E2E264A0006EECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5E03181E2E277D0006EECF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF5E031A1E2E2BFC0006EECF /* LargeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeTextField.swift; sourceTree = "<group>"; };
+		BF5E031C1E2E2D8D0006EECF /* LargeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		BF5E031E1E2E2FDA0006EECF /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BF5E03201E2E32920006EECF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF5E03221E2F597F0006EECF /* NewsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableVC.swift; sourceTree = "<group>"; };
+		BF5E03241E30BAD10006EECF /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		BF5E03261E30BB5E0006EECF /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		BF75D7A01E30CD3A0060F0AA /* NewsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsDetailVC.swift; path = Assets.xcassets/NewsDetailVC.swift; sourceTree = "<group>"; };
+		BF75D7A21E30D2660060F0AA /* Dosis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Bold.otf"; sourceTree = "<group>"; };
+		BF75D7A31E30D2660060F0AA /* Dosis-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraBold.otf"; sourceTree = "<group>"; };
+		BF75D7A41E30D2660060F0AA /* Dosis-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-ExtraLight.otf"; sourceTree = "<group>"; };
+		BF75D7A51E30D2660060F0AA /* Dosis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Light.otf"; sourceTree = "<group>"; };
+		BF75D7A61E30D2660060F0AA /* Dosis-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Medium.otf"; sourceTree = "<group>"; };
+		BF75D7A71E30D2660060F0AA /* Dosis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.otf"; sourceTree = "<group>"; };
+		BF75D7A81E30D2660060F0AA /* Dosis-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-SemiBold.otf"; sourceTree = "<group>"; };
+		BF75D7A91E30D4940060F0AA /* RoundCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCell.swift; sourceTree = "<group>"; };
+		BF75D7AB1E30D4F20060F0AA /* Round.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		BF75D7AD1E30D6590060F0AA /* RoundsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundsTableVC.swift; sourceTree = "<group>"; };
+		BF75D7B61E32BA8A0060F0AA /* Match.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		BF75D7B81E32BBDE0060F0AA /* RoundDetailTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundDetailTableVC.swift; sourceTree = "<group>"; };
+		BF75D7BA1E32C21A0060F0AA /* MatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+		BF75D7BC1E32D7780060F0AA /* LaddersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaddersVC.swift; sourceTree = "<group>"; };
+		BF75D7BE1E32D9520060F0AA /* Grade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grade.swift; sourceTree = "<group>"; };
+		BF75D7C01E32E05B0060F0AA /* GradeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeCell.swift; sourceTree = "<group>"; };
+		BF75D7C21E35FBA00060F0AA /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		BF75D7C41E35FBC50060F0AA /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		BF75D7C61E35FD130060F0AA /* EventTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableVC.swift; sourceTree = "<group>"; };
+		BF75D7C81E360F2C0060F0AA /* MoreTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableVC.swift; sourceTree = "<group>"; };
+		BF75D7CA1E361B170060F0AA /* SocialNetworks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
+		E4079F8474810B45D87E2CF3 /* Pods-Stanhope FNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stanhope FNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stanhope FNC/Pods-Stanhope FNC.debug.xcconfig"; sourceTree = "<group>"; };
+		FE271A8AECA0A4A189BA59C5 /* Pods_Stanhope_FNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stanhope_FNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +101,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107FC68845C6EA607EB37291 /* Pods_Stanhope_FNC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D4ECCC63D5F8D17DE192CB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE271A8AECA0A4A189BA59C5 /* Pods_Stanhope_FNC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF5E02F21E2E264A0006EECF = {
 			isa = PBXGroup;
 			children = (
 				BF5E02FD1E2E264A0006EECF /* Stanhope FNC */,
 				BF5E02FC1E2E264A0006EECF /* Products */,
+				D70A0A580B2F3C42C1F8A42F /* Pods */,
+				8D4ECCC63D5F8D17DE192CB7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +137,13 @@
 		BF5E02FD1E2E264A0006EECF /* Stanhope FNC */ = {
 			isa = PBXGroup;
 			children = (
+				BF5E03181E2E277D0006EECF /* GoogleService-Info.plist */,
+				BF5E03171E2E26890006EECF /* Resources */,
+				BF5E03161E2E26840006EECF /* Services */,
+				BF5E03151E2E267E0006EECF /* Model */,
+				BF5E03141E2E26790006EECF /* View */,
+				BF5E03131E2E266E0006EECF /* Controller */,
 				BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */,
-				BF5E03001E2E264A0006EECF /* ViewController.swift */,
 				BF5E03021E2E264A0006EECF /* Main.storyboard */,
 				BF5E03081E2E264A0006EECF /* Assets.xcassets */,
 				BF5E030A1E2E264A0006EECF /* LaunchScreen.storyboard */,
@@ -67,6 +153,83 @@
 			path = "Stanhope FNC";
 			sourceTree = "<group>";
 		};
+		BF5E03131E2E266E0006EECF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF5E03001E2E264A0006EECF /* ViewController.swift */,
+				BF5E03221E2F597F0006EECF /* NewsTableVC.swift */,
+				BF75D7A01E30CD3A0060F0AA /* NewsDetailVC.swift */,
+				BF75D7AD1E30D6590060F0AA /* RoundsTableVC.swift */,
+				BF75D7B81E32BBDE0060F0AA /* RoundDetailTableVC.swift */,
+				BF75D7BC1E32D7780060F0AA /* LaddersVC.swift */,
+				BF75D7C61E35FD130060F0AA /* EventTableVC.swift */,
+				BF75D7C81E360F2C0060F0AA /* MoreTableVC.swift */,
+				BF5933141E395EB10015428B /* EventDetailVC.swift */,
+				BF5933161E3966130015428B /* EventDetailTableVC.swift */,
+				BF59331E1E397A800015428B /* WebViewDetailVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BF5E03141E2E26790006EECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF5E031A1E2E2BFC0006EECF /* LargeTextField.swift */,
+				BF5E031C1E2E2D8D0006EECF /* LargeButton.swift */,
+				BF5E03261E30BB5E0006EECF /* NewsCell.swift */,
+				BF75D7A91E30D4940060F0AA /* RoundCell.swift */,
+				BF75D7B61E32BA8A0060F0AA /* Match.swift */,
+				BF75D7BA1E32C21A0060F0AA /* MatchCell.swift */,
+				BF75D7C01E32E05B0060F0AA /* GradeCell.swift */,
+				BF75D7C41E35FBC50060F0AA /* EventCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BF5E03151E2E267E0006EECF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF5E03241E30BAD10006EECF /* News.swift */,
+				BF75D7AB1E30D4F20060F0AA /* Round.swift */,
+				BF75D7BE1E32D9520060F0AA /* Grade.swift */,
+				BF75D7C21E35FBA00060F0AA /* Event.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BF5E03161E2E26840006EECF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BF5E031E1E2E2FDA0006EECF /* DataService.swift */,
+				BF5E03201E2E32920006EECF /* Constants.swift */,
+				BF75D7CA1E361B170060F0AA /* SocialNetworks.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		BF5E03171E2E26890006EECF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF75D7A21E30D2660060F0AA /* Dosis-Bold.otf */,
+				BF75D7A31E30D2660060F0AA /* Dosis-ExtraBold.otf */,
+				BF75D7A41E30D2660060F0AA /* Dosis-ExtraLight.otf */,
+				BF75D7A51E30D2660060F0AA /* Dosis-Light.otf */,
+				BF75D7A61E30D2660060F0AA /* Dosis-Medium.otf */,
+				BF75D7A71E30D2660060F0AA /* Dosis-Regular.otf */,
+				BF75D7A81E30D2660060F0AA /* Dosis-SemiBold.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D70A0A580B2F3C42C1F8A42F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E4079F8474810B45D87E2CF3 /* Pods-Stanhope FNC.debug.xcconfig */,
+				A4A3877052992BDC9EED4FC6 /* Pods-Stanhope FNC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +237,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF5E03101E2E264A0006EECF /* Build configuration list for PBXNativeTarget "Stanhope FNC" */;
 			buildPhases = (
+				A43496786D9AE73224B59217 /* [CP] Check Pods Manifest.lock */,
 				BF5E02F71E2E264A0006EECF /* Sources */,
 				BF5E02F81E2E264A0006EECF /* Frameworks */,
 				BF5E02F91E2E264A0006EECF /* Resources */,
+				A0D5195F03A24454075659F9 /* [CP] Embed Pods Frameworks */,
+				43CDBDA8B23B7C172CFF41DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,13 +293,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5E03191E2E277D0006EECF /* GoogleService-Info.plist in Resources */,
+				BF75D7B41E3240FF0060F0AA /* Dosis-Regular.otf in Resources */,
+				BF75D7B51E3240FF0060F0AA /* Dosis-SemiBold.otf in Resources */,
+				BF75D7B11E3240FF0060F0AA /* Dosis-ExtraLight.otf in Resources */,
 				BF5E030C1E2E264A0006EECF /* LaunchScreen.storyboard in Resources */,
 				BF5E03091E2E264A0006EECF /* Assets.xcassets in Resources */,
+				BF75D7B31E3240FF0060F0AA /* Dosis-Medium.otf in Resources */,
 				BF5E03041E2E264A0006EECF /* Main.storyboard in Resources */,
+				BF75D7B21E3240FF0060F0AA /* Dosis-Light.otf in Resources */,
+				BF75D7B01E3240F80060F0AA /* Dosis-ExtraBold.otf in Resources */,
+				BF75D7AF1E3240F50060F0AA /* Dosis-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43CDBDA8B23B7C172CFF41DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stanhope FNC/Pods-Stanhope FNC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0D5195F03A24454075659F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stanhope FNC/Pods-Stanhope FNC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A43496786D9AE73224B59217 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF5E02F71E2E264A0006EECF /* Sources */ = {
@@ -141,8 +363,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5E03071E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld in Sources */,
+				BF75D7CB1E361B170060F0AA /* SocialNetworks.swift in Sources */,
+				BF5E031D1E2E2D8D0006EECF /* LargeButton.swift in Sources */,
+				BF75D7BD1E32D7780060F0AA /* LaddersVC.swift in Sources */,
+				BF5E03231E2F597F0006EECF /* NewsTableVC.swift in Sources */,
+				BF5E03251E30BAD10006EECF /* News.swift in Sources */,
+				BF75D7C11E32E05B0060F0AA /* GradeCell.swift in Sources */,
+				BF75D7C51E35FBC50060F0AA /* EventCell.swift in Sources */,
+				BF5E03271E30BB5E0006EECF /* NewsCell.swift in Sources */,
 				BF5E03011E2E264A0006EECF /* ViewController.swift in Sources */,
+				BF75D7AE1E30D6590060F0AA /* RoundsTableVC.swift in Sources */,
+				BF75D7AA1E30D4940060F0AA /* RoundCell.swift in Sources */,
+				BF75D7B71E32BA8A0060F0AA /* Match.swift in Sources */,
+				BF5E031F1E2E2FDA0006EECF /* DataService.swift in Sources */,
+				BF75D7C71E35FD130060F0AA /* EventTableVC.swift in Sources */,
+				BF75D7A11E30CD3A0060F0AA /* NewsDetailVC.swift in Sources */,
+				BF5933171E3966130015428B /* EventDetailTableVC.swift in Sources */,
+				BF5933151E395EB10015428B /* EventDetailVC.swift in Sources */,
+				BF5E03211E2E32920006EECF /* Constants.swift in Sources */,
+				BF75D7C91E360F2C0060F0AA /* MoreTableVC.swift in Sources */,
+				BF75D7AC1E30D4F20060F0AA /* Round.swift in Sources */,
+				BF75D7BB1E32C21A0060F0AA /* MatchCell.swift in Sources */,
 				BF5E02FF1E2E264A0006EECF /* AppDelegate.swift in Sources */,
+				BF5E031B1E2E2BFC0006EECF /* LargeTextField.swift in Sources */,
+				BF75D7BF1E32D9520060F0AA /* Grade.swift in Sources */,
+				BF59331F1E397A800015428B /* WebViewDetailVC.swift in Sources */,
+				BF75D7C31E35FBA00060F0AA /* Event.swift in Sources */,
+				BF75D7B91E32BBDE0060F0AA /* RoundDetailTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +510,12 @@
 		};
 		BF5E03111E2E264A0006EECF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4079F8474810B45D87E2CF3 /* Pods-Stanhope FNC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H3A77962QT;
 				INFOPLIST_FILE = "Stanhope FNC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.jasonleocata.Stanhope-FNC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,10 +525,12 @@
 		};
 		BF5E03121E2E264A0006EECF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4A3877052992BDC9EED4FC6 /* Pods-Stanhope FNC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H3A77962QT;
 				INFOPLIST_FILE = "Stanhope FNC/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.jasonleocata.Stanhope-FNC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +557,7 @@
 				BF5E03121E2E264A0006EECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>844889276591-80iog43fc8ajpakugcj3o1bci5kik9sc.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.844889276591-80iog43fc8ajpakugcj3o1bci5kik9sc</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCno7mlRcb6uVDcONOmwQQF3gP5D4Aj5XI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>844889276591</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>au.com.jasonleocata.Stanhope-FNC</string>
+	<key>PROJECT_ID</key>
+	<string>stanhopefnc-7bacf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>stanhopefnc-7bacf.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:844889276591:ios:9feb0ee481bd8a07</string>
+	<key>DATABASE_URL</key>
+	<string>https://stanhopefnc-7bacf.firebaseio.com</string>
+</dict>
+</plist>

@@ -41,5 +41,42 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb502652183258170</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>502652183258170</string>
+	<key>FacebookDisplayName</key>
+	<string>StanhopeFNC</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Dosis-Bold.otf</string>
+		<string>Dosis-ExtraBold.otf</string>
+		<string>Dosis-ExtraLight.otf</string>
+		<string>Dosis-Light.otf</string>
+		<string>Dosis-Medium.otf</string>
+		<string>Dosis-Regular.otf</string>
+		<string>Dosis-SemiBold.otf</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>
