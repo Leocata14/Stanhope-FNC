@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
             print("ID FOUND IN KEYCHAIN")
             performSegue(withIdentifier: "goToNews", sender: nil)
+        } else {
+            print("JASE: NO ID FOUND IN KEYCHAIN SOMETHING IS WRONG")
         }
     }
 

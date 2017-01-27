@@ -8,11 +8,18 @@
 
 import UIKit
 import Firebase
+import XMSegmentedControl
 
-class RoundsTableVC: UITableViewController {
+
+class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate, XMSegmentedControlDelegate {
     
     var rounds = [Round]()
     var currRound: Round?
+    
+    var finalsRounds = [FinalsRound]()
+    
+    
+    var selectedIndex = 0
     
      @IBOutlet weak var roundsTableView: UITableView!
     //@IBOutlet weak var roundsSegmentedControl: XMSegmentedControl!
@@ -24,6 +31,21 @@ class RoundsTableVC: UITableViewController {
         roundsTableView.dataSource = self
         
         roundsTableView.estimatedRowHeight = 120
+        
+        let roundsSegementedControl = XMSegmentedControl(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44), segmentTitle: ["HOME & AWAY", "FINALS"], selectedItemHighlightStyle: XMSelectedItemHighlightStyle.bottomEdge)
+        roundsSegementedControl.delegate = self
+        
+        roundsSegementedControl.backgroundColor = COLOUR_DARK_MAROON
+        roundsSegementedControl.highlightColor = COLOUR_YELLOW
+        roundsSegementedControl.tint = UIColor.white
+        roundsSegementedControl.highlightTint = COLOUR_YELLOW
+        roundsSegementedControl.font = UIFont(name: "Dosis-SemiBold", size: 14.0)!
+        
+        self.view.addSubview(roundsSegementedControl)
+        
+        xmSegmentedControl(roundsSegementedControl, selectedSegment: 0)
+        
+        getFinals()
         
         DataService.ds.REF_ROUNDS.observe(.value, with: { (snapshot) -> Void in
             
@@ -45,13 +67,47 @@ class RoundsTableVC: UITableViewController {
                 }
             }
             self.roundsTableView.reloadData()
-            
-            
         })
         
         
-
         
+        
+        
+    }
+    
+    func xmSegmentedControl(_ xmSegmentedControl: XMSegmentedControl, selectedSegment: Int) {
+        print("SegmentedControl Selected Segment: \(selectedSegment)")
+        if selectedSegment == 0 {
+            self.selectedIndex = 0
+        } else if selectedSegment == 1 {
+            self.selectedIndex = 1
+            DataService.ds.REF_FINALS_MATCHES.observe(.value, with: { (snapshot) -> Void in
+                self.finalsRounds = []
+                if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                    for snap in snapshots {
+                        //print("JASE: FINALS SNAP \(snap)")
+                    }
+                }
+            })
+        }
+    }
+    
+    func getFinals() {
+        print("JASE: GETTING FINALS")
+        DataService.ds.REF_FINALS_ROUNDS.observe(.value, with: { (snapshot) -> Void in
+            self.finalsRounds = []
+            if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                for snap in snapshots {
+                    print("JASE: FINALS ROUNDS \(snap)")
+                    if let roundsDict = snap.value as? Dictionary<String,AnyObject> {
+                        let key = snap.key
+                        let final = FinalsRound(finalsRoundKey: key, dictionary: roundsDict)
+                        self.finalsRounds.append(final)
+                    }
+                }
+            }
+            self.roundsTableView.reloadData()
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,19 +117,30 @@ class RoundsTableVC: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        if self.selectedIndex == 0 {
+            return 1
+        } else {
+            return finalsRounds.count
+        }
+        
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return rounds.count
     }
 
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let round = rounds[indexPath.row]
+        
+        if self.selectedIndex == 0 {
+            
+        } else if self.selectedIndex == 1 {
+            
+        }
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "roundCell") as? RoundCell {
             cell.configureRoundCell(round: round)

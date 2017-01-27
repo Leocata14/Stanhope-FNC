@@ -46,12 +46,6 @@ class RoundDetailTableVC: UITableViewController {
                             let match = Match(matchKey: key, dicitionary: matchDict)
                             self.matches.append(match)
                             self.matches.sort(by: {$0.sort! < $1.sort!})
-                            
-                            /*
-                            if match.checkWin().stanWin {
-                                self.wins = self.wins + 1
-                            }
-                            */
                         }
                         
                     }
@@ -60,7 +54,6 @@ class RoundDetailTableVC: UITableViewController {
             }
             
             self.matchesTableView.reloadData()
-            //self.winsLabel.text = "Lions won \(self.wins)/\(self.matches.count)".uppercaseString
         })
         
         

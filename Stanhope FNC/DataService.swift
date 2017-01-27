@@ -27,6 +27,8 @@ class DataService {
     private var _REF_MATCHES = URL_BASE.child("matches")
     private var _REF_GRADES = URL_BASE.child("grade")
     private var _REF_EVENTS = URL_BASE.child("events")
+    private var _REF_FINALS_MATCHES = URL_BASE.child("finalsMatches")
+    private var _REF_FINALS_ROUNDS = URL_BASE.child("finalTypes")
     
     private var _REF_CONFIG = URL_BASE.child("config")
     
@@ -60,6 +62,14 @@ class DataService {
     
     var REF_EVENTS: FIRDatabaseReference {
         return _REF_EVENTS
+    }
+    
+    var REF_FINALS_MATCHES: FIRDatabaseReference {
+        return _REF_FINALS_MATCHES
+    }
+    
+    var REF_FINALS_ROUNDS: FIRDatabaseReference {
+        return _REF_FINALS_ROUNDS
     }
     
     var REF_CONFIG: FIRDatabaseReference {

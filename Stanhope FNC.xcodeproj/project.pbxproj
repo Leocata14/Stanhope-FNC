@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		107FC68845C6EA607EB37291 /* Pods_Stanhope_FNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE271A8AECA0A4A189BA59C5 /* Pods_Stanhope_FNC.framework */; };
+		BF4C22071E39A77900938EF2 /* FinalMatchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */; };
+		BF4C22091E39B0F800938EF2 /* FinalMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C22081E39B0F800938EF2 /* FinalMatch.swift */; };
+		BF4C220D1E39C2B800938EF2 /* FinalsRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C220C1E39C2B800938EF2 /* FinalsRound.swift */; };
 		BF5933151E395EB10015428B /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933141E395EB10015428B /* EventDetailVC.swift */; };
 		BF5933171E3966130015428B /* EventDetailTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933161E3966130015428B /* EventDetailTableVC.swift */; };
 		BF59331F1E397A800015428B /* WebViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59331E1E397A800015428B /* WebViewDetailVC.swift */; };
@@ -51,6 +54,9 @@
 
 /* Begin PBXFileReference section */
 		A4A3877052992BDC9EED4FC6 /* Pods-Stanhope FNC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stanhope FNC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stanhope FNC/Pods-Stanhope FNC.release.xcconfig"; sourceTree = "<group>"; };
+		BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalMatchCell.xib; sourceTree = "<group>"; };
+		BF4C22081E39B0F800938EF2 /* FinalMatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalMatch.swift; sourceTree = "<group>"; };
+		BF4C220C1E39C2B800938EF2 /* FinalsRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalsRound.swift; sourceTree = "<group>"; };
 		BF5933141E395EB10015428B /* EventDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
 		BF5933161E3966130015428B /* EventDetailTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailTableVC.swift; sourceTree = "<group>"; };
 		BF59331E1E397A800015428B /* WebViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDetailVC.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 				BF5E03131E2E266E0006EECF /* Controller */,
 				BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */,
 				BF5E03021E2E264A0006EECF /* Main.storyboard */,
+				BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */,
 				BF5E03081E2E264A0006EECF /* Assets.xcassets */,
 				BF5E030A1E2E264A0006EECF /* LaunchScreen.storyboard */,
 				BF5E030D1E2E264A0006EECF /* Info.plist */,
@@ -178,7 +185,6 @@
 				BF5E031C1E2E2D8D0006EECF /* LargeButton.swift */,
 				BF5E03261E30BB5E0006EECF /* NewsCell.swift */,
 				BF75D7A91E30D4940060F0AA /* RoundCell.swift */,
-				BF75D7B61E32BA8A0060F0AA /* Match.swift */,
 				BF75D7BA1E32C21A0060F0AA /* MatchCell.swift */,
 				BF75D7C01E32E05B0060F0AA /* GradeCell.swift */,
 				BF75D7C41E35FBC50060F0AA /* EventCell.swift */,
@@ -193,6 +199,9 @@
 				BF75D7AB1E30D4F20060F0AA /* Round.swift */,
 				BF75D7BE1E32D9520060F0AA /* Grade.swift */,
 				BF75D7C21E35FBA00060F0AA /* Event.swift */,
+				BF75D7B61E32BA8A0060F0AA /* Match.swift */,
+				BF4C22081E39B0F800938EF2 /* FinalMatch.swift */,
+				BF4C220C1E39C2B800938EF2 /* FinalsRound.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -303,6 +312,7 @@
 				BF5E03041E2E264A0006EECF /* Main.storyboard in Resources */,
 				BF75D7B21E3240FF0060F0AA /* Dosis-Light.otf in Resources */,
 				BF75D7B01E3240F80060F0AA /* Dosis-ExtraBold.otf in Resources */,
+				BF4C22071E39A77900938EF2 /* FinalMatchCell.xib in Resources */,
 				BF75D7AF1E3240F50060F0AA /* Dosis-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5E03071E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld in Sources */,
+				BF4C22091E39B0F800938EF2 /* FinalMatch.swift in Sources */,
 				BF75D7CB1E361B170060F0AA /* SocialNetworks.swift in Sources */,
 				BF5E031D1E2E2D8D0006EECF /* LargeButton.swift in Sources */,
 				BF75D7BD1E32D7780060F0AA /* LaddersVC.swift in Sources */,
@@ -372,6 +383,7 @@
 				BF75D7C51E35FBC50060F0AA /* EventCell.swift in Sources */,
 				BF5E03271E30BB5E0006EECF /* NewsCell.swift in Sources */,
 				BF5E03011E2E264A0006EECF /* ViewController.swift in Sources */,
+				BF4C220D1E39C2B800938EF2 /* FinalsRound.swift in Sources */,
 				BF75D7AE1E30D6590060F0AA /* RoundsTableVC.swift in Sources */,
 				BF75D7AA1E30D4940060F0AA /* RoundCell.swift in Sources */,
 				BF75D7B71E32BA8A0060F0AA /* Match.swift in Sources */,

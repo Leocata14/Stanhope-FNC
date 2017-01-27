@@ -11,7 +11,6 @@ import Foundation
 class Round {
     
     private var _roundKey: String!
-    //private var _name: String?
     private var _opposition: String?
     private var _status: String?
     private var _playedAt: String?
