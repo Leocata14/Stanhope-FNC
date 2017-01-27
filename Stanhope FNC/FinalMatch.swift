@@ -16,6 +16,7 @@ class FinalMatch {
     private var _stanhopeScore: String?
     private var _oppositionScore: String?
     private var _playedAt: String?
+    private var _status: String?
     
     var finalKey: String {
         return _finalKey
@@ -32,6 +33,12 @@ class FinalMatch {
     var playedAt: String {
         return _playedAt!
     }
+    var date: String {
+        return _date!
+    }
+    var status: String {
+        return _status!
+    }
     
     init(finalKey: String, dictionary: Dictionary<String,AnyObject>) {
         self._finalKey = finalKey
@@ -47,6 +54,12 @@ class FinalMatch {
         }
         if let playedAt = dictionary["playedAt"] as? String {
             self._playedAt = playedAt
+        }
+        if let date = dictionary["date"] as? String {
+            self._date = date
+        }
+        if let status = dictionary["status"] as? String {
+            self._status = status
         }
         
     }

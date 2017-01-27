@@ -19,5 +19,6 @@ pod 'Alamofire', '~> 4.3'
 pod 'AlamofireImage', '~> 3.1'
 pod 'Kingfisher', '~> 3.0'
 pod 'XMSegmentedControl'
+pod 'Kanna', '~> 2.1.0'
 
 end

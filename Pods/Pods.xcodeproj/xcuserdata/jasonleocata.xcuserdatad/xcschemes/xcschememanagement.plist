@@ -44,6 +44,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kanna.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -77,17 +82,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1AEF401ECC44DBAABA201E0A9F379899</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>44CAD6CE523055ED339E87154473A254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>76B5C7A7736DF42578558D1B8F021923</key>
+		<key>46F40F54A91554BF0500B523689370E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D10E4FF5A483B852B47CCA0B994E340</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,17 +102,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>894B9057ED5D64AE719088F1ECF1A77D</key>
+		<key>9207B6E99009E1A27278AE6369B341D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BBCF835843434DC6C39D4CE1EEC2420C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,12 +122,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>BFBC6AF53847C06B2DF893AEC2040A0B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C80D406A3D95E9343CA92F937974C784</key>
 		<dict>
 			<key>primary</key>
 			<true/>

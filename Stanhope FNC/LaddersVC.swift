@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import XMSegmentedControl
 
-class LaddersVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
+class LaddersVC: UIViewController, UITableViewDataSource,UITableViewDelegate, XMSegmentedControlDelegate {
     
     var grades = [Grade]()
     
@@ -54,6 +54,10 @@ class LaddersVC: UIViewController, UITableViewDataSource,UITableViewDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func xmSegmentedControl(_ xmSegmentedControl: XMSegmentedControl, selectedSegment: Int) {
+        print("SegmentedControl Selected Segment: \(selectedSegment)")
     }
 
     // MARK: - Table view data source

@@ -14,6 +14,7 @@
 		BF5933151E395EB10015428B /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933141E395EB10015428B /* EventDetailVC.swift */; };
 		BF5933171E3966130015428B /* EventDetailTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933161E3966130015428B /* EventDetailTableVC.swift */; };
 		BF59331F1E397A800015428B /* WebViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59331E1E397A800015428B /* WebViewDetailVC.swift */; };
+		BF5933211E3AFCD20015428B /* FinalMatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933201E3AFCD20015428B /* FinalMatchCell.swift */; };
 		BF5E02FF1E2E264A0006EECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */; };
 		BF5E03011E2E264A0006EECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03001E2E264A0006EECF /* ViewController.swift */; };
 		BF5E03041E2E264A0006EECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5E03021E2E264A0006EECF /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		BF5933141E395EB10015428B /* EventDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
 		BF5933161E3966130015428B /* EventDetailTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailTableVC.swift; sourceTree = "<group>"; };
 		BF59331E1E397A800015428B /* WebViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDetailVC.swift; sourceTree = "<group>"; };
+		BF5933201E3AFCD20015428B /* FinalMatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalMatchCell.swift; sourceTree = "<group>"; };
 		BF5E02FB1E2E264A0006EECF /* Stanhope FNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stanhope FNC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF5E03001E2E264A0006EECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				BF75D7BA1E32C21A0060F0AA /* MatchCell.swift */,
 				BF75D7C01E32E05B0060F0AA /* GradeCell.swift */,
 				BF75D7C41E35FBC50060F0AA /* EventCell.swift */,
+				BF5933201E3AFCD20015428B /* FinalMatchCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				BF5E03271E30BB5E0006EECF /* NewsCell.swift in Sources */,
 				BF5E03011E2E264A0006EECF /* ViewController.swift in Sources */,
 				BF4C220D1E39C2B800938EF2 /* FinalsRound.swift in Sources */,
+				BF5933211E3AFCD20015428B /* FinalMatchCell.swift in Sources */,
 				BF75D7AE1E30D6590060F0AA /* RoundsTableVC.swift in Sources */,
 				BF75D7AA1E30D4940060F0AA /* RoundCell.swift in Sources */,
 				BF75D7B71E32BA8A0060F0AA /* Match.swift in Sources */,

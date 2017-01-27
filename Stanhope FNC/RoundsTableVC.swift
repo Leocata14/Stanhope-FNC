@@ -17,6 +17,7 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
     var currRound: Round?
     
     var finalsRounds = [FinalsRound]()
+    var finalsMatches = [FinalMatch]()
     
     
     var selectedIndex = 0
@@ -79,16 +80,23 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
         print("SegmentedControl Selected Segment: \(selectedSegment)")
         if selectedSegment == 0 {
             self.selectedIndex = 0
+            self.roundsTableView.reloadData()
         } else if selectedSegment == 1 {
             self.selectedIndex = 1
             DataService.ds.REF_FINALS_MATCHES.observe(.value, with: { (snapshot) -> Void in
-                self.finalsRounds = []
+                self.finalsMatches = []
                 if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
                     for snap in snapshots {
-                        //print("JASE: FINALS SNAP \(snap)")
+                        print("JASE: FINALS SNAP \(snap)")
+                        if let finalsMatchDict = snap.value as? Dictionary<String,AnyObject> {
+                            let key = snap.key
+                            let finalMatch = FinalMatch(finalKey: key, dictionary: finalsMatchDict)
+                            self.finalsMatches.append(finalMatch)
+                        }
                     }
                 }
             })
+            self.roundsTableView.reloadData()
         }
     }
     
@@ -129,7 +137,14 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return rounds.count
+        if selectedIndex == 0 {
+            return rounds.count
+        } else if selectedIndex == 1 {
+            return finalsMatches.count
+        } else {
+            return 0
+        }
+        
     }
 
     
@@ -137,17 +152,27 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
         let round = rounds[indexPath.row]
         
         if self.selectedIndex == 0 {
-            
+            print("Round cells needed")
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "roundCell") as? RoundCell {
+                cell.configureRoundCell(round: round)
+                return cell
+            } else {
+                return RoundCell()
+            }
         } else if self.selectedIndex == 1 {
-            
-        }
-        
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "roundCell") as? RoundCell {
-            cell.configureRoundCell(round: round)
-            return cell
+            let final = finalsMatches[indexPath.row]
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "roundCell") as? FinalMatchCell {
+                cell.configureFinalCell(final: final)
+                return cell
+            } else {
+                return FinalMatchCell()
+            }
         } else {
+
             return RoundCell()
         }
+        
+        
     }
     
     
