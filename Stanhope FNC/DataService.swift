@@ -24,6 +24,7 @@ class DataService {
     private var _REF_USERS = URL_BASE.child("users")
     private var _REF_NEWS = URL_BASE.child("news")
     private var _REF_ROUNDS = URL_BASE.child("rounds")
+    private var _REF_ROUNDS_MATCHES = URL_BASE.child("rounds/matches")
     private var _REF_MATCHES = URL_BASE.child("matches")
     private var _REF_GRADES = URL_BASE.child("grade")
     private var _REF_EVENTS = URL_BASE.child("events")
@@ -44,12 +45,19 @@ class DataService {
         return _REF_BASE
     }
     
+    var REF_USERS: FIRDatabaseReference {
+        return _REF_USERS
+    }
+    
     var REF_NEWS: FIRDatabaseReference {
         return _REF_NEWS
     }
     
     var REF_ROUNDS: FIRDatabaseReference {
         return _REF_ROUNDS
+    }
+    var REF_ROUNDS_MATCHES: FIRDatabaseReference {
+        return _REF_ROUNDS_MATCHES
     }
     
     var REF_MATCHES: FIRDatabaseReference {

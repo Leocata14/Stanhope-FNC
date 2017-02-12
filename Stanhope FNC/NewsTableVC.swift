@@ -17,12 +17,31 @@ class NewsTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if news.count == 0 {
+            LoaderOverlay.shared.show()
+        } else {
+            LoaderOverlay.shared.hide()
+        }
         
+        
+        downloadNewsItems()
         
         tableView.delegate = self
         tableView.dataSource = self
         
-        tableView.estimatedRowHeight = 225
+        tableView.estimatedRowHeight = 285
+        
+        self.tableView.reloadData()
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
+    
+    
+    func downloadNewsItems() {
         
         DataService.ds.REF_NEWS.observe(.value, with: { (snapshot) -> Void in
             
@@ -47,16 +66,15 @@ class NewsTableVC: UITableViewController {
             self.news = self.news.reversed()
             self.tableView.reloadData()
             print(self.news)
+            
         })
         
         DataService.ds.REF_NEWS.keepSynced(true)
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        print("JASE: DONE")
+        LoaderOverlay.shared.hide()
     }
+    
+    
 
 
 
@@ -85,6 +103,7 @@ class NewsTableVC: UITableViewController {
             }
             
             cell.configureCell(news: new, img: img)
+            
             return cell
         } else {
             return NewsCell()

@@ -52,6 +52,10 @@ class ViewController: UIViewController {
                             print("JASE: Something went wrong. Unable to create user with Email")
                         } else {
                             print("JASE: Successfully authenticated with Firebase/Email")
+                            //Save to Firebase here
+                            let uid = user?.uid
+                            DataService.ds.REF_USERS.child(uid!)
+                            
                             if let user = user {
                                 self.completeSignIn(id: user.uid)
                             }
@@ -67,13 +71,16 @@ class ViewController: UIViewController {
     @IBAction func facebookButtonTapped(_ sender: Any) {
         let facebookLogin = FBSDKLoginManager()
         
-        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
+        facebookLogin.logIn(withReadPermissions: ["email","public_profile"], from: self) { (result, error) in
             if error != nil {
                 print("JASE: Unable to authenticate with Facebook")
             } else if result?.isCancelled == true {
-                print("JASE: User cancelled FAcebook Auth")
+                print("JASE: User cancelled Facebook Auth")
             } else {
                 print("JASE: Successfully authenticated ith Fcebook")
+                //Save to Fireabse here
+                
+                
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 self.firebaseAuth(credential)
             }
@@ -82,10 +89,7 @@ class ViewController: UIViewController {
         
 
     }
-    
-    func getConfig() {
-        
-    }
+
     
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in

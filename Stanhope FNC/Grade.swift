@@ -14,6 +14,7 @@ class Grade {
     private var _ladderUrl: String?
     private var _matches: Dictionary<String,AnyObject>?
     private var _shortName: String?
+    private var _latestResultsUrl: String?
     
     var gradeKey: String? {
         return _gradeKey
@@ -25,6 +26,10 @@ class Grade {
     
     var ladderUrl: String? {
         return _ladderUrl
+    }
+    
+    var latestResultsUrl: String? {
+        return _latestResultsUrl
     }
     
     var matches: Dictionary<String,AnyObject>? {
@@ -43,6 +48,9 @@ class Grade {
         }
         if let ladderUrl = dictionary["ladderUrl"] as? String {
             self._ladderUrl = ladderUrl
+        }
+        if let latestResultsUrl = dictionary["latestResultsUrl"] as? String {
+            self._latestResultsUrl = latestResultsUrl
         }
         if let matches = dictionary["matches"] as! Dictionary<String,AnyObject>? {
             self._matches = matches

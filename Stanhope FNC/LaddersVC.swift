@@ -14,18 +14,18 @@ class LaddersVC: UIViewController, UITableViewDataSource,UITableViewDelegate, XM
     
     var grades = [Grade]()
     
-    
+    var selectedIndex = 0
     
     @IBOutlet var gradesTableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         gradesTableView.delegate = self
         gradesTableView.dataSource = self
         
-        let teamsSegementedControl = XMSegmentedControl(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44), segmentTitle: ["LADDERS", "RESULTS", "MATCHES"], selectedItemHighlightStyle: XMSelectedItemHighlightStyle.bottomEdge)
-
+        let teamsSegementedControl = XMSegmentedControl(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: 44), segmentTitle: ["LADDERS", "RESULTS"], selectedItemHighlightStyle: XMSelectedItemHighlightStyle.bottomEdge)
+        teamsSegementedControl.delegate = self
         teamsSegementedControl.backgroundColor = COLOUR_DARK_MAROON
         teamsSegementedControl.highlightColor = COLOUR_YELLOW
         teamsSegementedControl.tint = UIColor.white
@@ -33,6 +33,8 @@ class LaddersVC: UIViewController, UITableViewDataSource,UITableViewDelegate, XM
         teamsSegementedControl.font = UIFont(name: "Dosis-SemiBold", size: 14.0)!
         
         self.view.addSubview(teamsSegementedControl)
+        
+        xmSegmentedControl(teamsSegementedControl, selectedSegment: 0)
         
         DataService.ds.REF_GRADES.observe(.value, with: { (snapshot) -> Void in
             self.grades = []
@@ -58,6 +60,13 @@ class LaddersVC: UIViewController, UITableViewDataSource,UITableViewDelegate, XM
     
     func xmSegmentedControl(_ xmSegmentedControl: XMSegmentedControl, selectedSegment: Int) {
         print("SegmentedControl Selected Segment: \(selectedSegment)")
+        if selectedSegment == 0 {
+            self.selectedIndex = 0
+        } else if selectedSegment == 1 {
+            self.selectedIndex = 1
+        } else if selectedSegment == 2 {
+            self.selectedIndex = 2
+        }
     }
 
     // MARK: - Table view data source
@@ -120,14 +129,60 @@ class LaddersVC: UIViewController, UITableViewDataSource,UITableViewDelegate, XM
     }
     */
 
-    /*
+    
     // MARK: - Navigation
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        if  selectedIndex == 0 {
+            print("hey")
+            
+            performSegue(withIdentifier: SEGUE_LADDER, sender: indexPath)
+        } else if selectedIndex == 1 {
+            print("hey1")
+            
+        } else if selectedIndex == 2 {
+            print("hey2")
+            performSegue(withIdentifier: SEGUE_MATCHES, sender: indexPath)
+        }
+        
+        gradesTableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+            if segue.identifier == SEGUE_LADDER {
+                if let indexPath = sender {
+                    let destinationVC = segue.destination as! LadderDetailCollectionVC
+                    
+                    
+                    
+                    let tappedGrade = grades[(indexPath as AnyObject).row]
+                    
+                    
+                    
+                    destinationVC.grade = tappedGrade
+                    destinationVC.title = tappedGrade.name?.uppercased()
+                    
+                    let netballGrades = ["A Grade","B Grade","C Grade","Under 15s","Under 17s"]
+                    
+                    for gr in netballGrades {
+                        if gr == tappedGrade.name {
+                            destinationVC.football = false
+                        }
+                    }
+                    
+                }
+            
+        } 
+        
+        
     }
-    */
+    
+
+    
 
 }

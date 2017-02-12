@@ -42,7 +42,7 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
         roundsSegementedControl.highlightTint = COLOUR_YELLOW
         roundsSegementedControl.font = UIFont(name: "Dosis-SemiBold", size: 14.0)!
         
-        self.view.addSubview(roundsSegementedControl)
+        //self.view.addSubview(roundsSegementedControl)
         
         xmSegmentedControl(roundsSegementedControl, selectedSegment: 0)
         
@@ -226,6 +226,7 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
                 
                 let tappedRound = rounds[indexPath.row]
                 destinationVC.round = tappedRound
+                roundsTableView.deselectRow(at: indexPath, animated: true)
             }
         }
     }

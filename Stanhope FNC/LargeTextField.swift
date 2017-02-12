@@ -19,8 +19,8 @@ class LargeTextField: UITextField {
         self.layer.backgroundColor = UIColor.clear.cgColor
         
         bottomLine.frame = CGRect(x: 0.0, y: self.frame.height - 3.0, width: self.frame.width, height: 1.0)
-        bottomLine.backgroundColor = UIColor.white.cgColor
-        //        self.borderStyle = UITextBorderStyle.None
+        bottomLine.backgroundColor = COLOUR_MAROON.cgColor
+        
         self.layer.addSublayer(bottomLine)
 
         

@@ -12,7 +12,7 @@ class LargeButton: UIButton {
     
     override func awakeFromNib() {
         
-        layer.cornerRadius = 3.0
+        layer.cornerRadius = 5.0
         layer.opacity = 1.0
         //layer.shadowColor = UIColor(red: SHADOW_COLOUR, green: SHADOW_COLOUR, blue: SHADOW_COLOUR, alpha: 0.5).CGColor
         //layer.shadowOpacity = 0.8

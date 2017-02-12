@@ -29,7 +29,7 @@ enum SocialNetwork {
         switch self {
         case .Facebook: return SocialNetworkUrl(scheme: "fb://profile/176761672460397", page: "http://facebook.com/StanhopeFootballNetballClub/")
         case .Twitter: return SocialNetworkUrl(scheme: "twitter:///user?screen_name=StanhopeFC", page: "https://twitter.com/StanhopeFC")
-        case .Instagram: return SocialNetworkUrl(scheme: "instagram://camera", page: "https://instagram.com/Stanhope_FNC")
+        case .Instagram: return SocialNetworkUrl(scheme: "instagram://user?username=Stanhope_FNC", page: "https://instagram.com/Stanhope_FNC")
         }
     }
     func openPage() {

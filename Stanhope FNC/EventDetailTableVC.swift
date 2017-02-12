@@ -20,7 +20,7 @@ class EventDetailTableVC: UITableViewController {
     @IBOutlet weak var eventTitleLabel: UILabel!
     @IBOutlet weak var eventTimeLabel: UILabel!
     @IBOutlet weak var eventLocationLabel: UILabel!
-    @IBOutlet weak var eventDescriptionLabel: UILabel!
+    @IBOutlet weak var eventDescriptionLabel: UITextView!
     
     var event: Event!
     static var imageCache = NSCache<AnyObject, AnyObject>()

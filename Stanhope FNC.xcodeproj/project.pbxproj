@@ -11,10 +11,14 @@
 		BF4C22071E39A77900938EF2 /* FinalMatchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */; };
 		BF4C22091E39B0F800938EF2 /* FinalMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C22081E39B0F800938EF2 /* FinalMatch.swift */; };
 		BF4C220D1E39C2B800938EF2 /* FinalsRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C220C1E39C2B800938EF2 /* FinalsRound.swift */; };
+		BF5290661E4E8292004DF19B /* LoaderOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5290651E4E8292004DF19B /* LoaderOverlay.swift */; };
 		BF5933151E395EB10015428B /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933141E395EB10015428B /* EventDetailVC.swift */; };
 		BF5933171E3966130015428B /* EventDetailTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933161E3966130015428B /* EventDetailTableVC.swift */; };
 		BF59331F1E397A800015428B /* WebViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59331E1E397A800015428B /* WebViewDetailVC.swift */; };
 		BF5933211E3AFCD20015428B /* FinalMatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933201E3AFCD20015428B /* FinalMatchCell.swift */; };
+		BF5933231E3B17700015428B /* LadderDetailCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933221E3B17700015428B /* LadderDetailCollectionVC.swift */; };
+		BF5933251E3B17B20015428B /* LadderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933241E3B17B20015428B /* LadderCollectionViewCell.swift */; };
+		BF5933271E3B181E0015428B /* LadderCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933261E3B181E0015428B /* LadderCollectionViewLayout.swift */; };
 		BF5E02FF1E2E264A0006EECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */; };
 		BF5E03011E2E264A0006EECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E03001E2E264A0006EECF /* ViewController.swift */; };
 		BF5E03041E2E264A0006EECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5E03021E2E264A0006EECF /* Main.storyboard */; };
@@ -58,10 +62,15 @@
 		BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalMatchCell.xib; sourceTree = "<group>"; };
 		BF4C22081E39B0F800938EF2 /* FinalMatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalMatch.swift; sourceTree = "<group>"; };
 		BF4C220C1E39C2B800938EF2 /* FinalsRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalsRound.swift; sourceTree = "<group>"; };
+		BF5290651E4E8292004DF19B /* LoaderOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderOverlay.swift; sourceTree = "<group>"; };
+		BF5290671E4FD159004DF19B /* Stanhope FNC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stanhope FNC.entitlements"; sourceTree = "<group>"; };
 		BF5933141E395EB10015428B /* EventDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
 		BF5933161E3966130015428B /* EventDetailTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailTableVC.swift; sourceTree = "<group>"; };
 		BF59331E1E397A800015428B /* WebViewDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDetailVC.swift; sourceTree = "<group>"; };
 		BF5933201E3AFCD20015428B /* FinalMatchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalMatchCell.swift; sourceTree = "<group>"; };
+		BF5933221E3B17700015428B /* LadderDetailCollectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LadderDetailCollectionVC.swift; sourceTree = "<group>"; };
+		BF5933241E3B17B20015428B /* LadderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LadderCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF5933261E3B181E0015428B /* LadderCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LadderCollectionViewLayout.swift; sourceTree = "<group>"; };
 		BF5E02FB1E2E264A0006EECF /* Stanhope FNC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stanhope FNC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF5E03001E2E264A0006EECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +154,7 @@
 		BF5E02FD1E2E264A0006EECF /* Stanhope FNC */ = {
 			isa = PBXGroup;
 			children = (
+				BF5290671E4FD159004DF19B /* Stanhope FNC.entitlements */,
 				BF5E03181E2E277D0006EECF /* GoogleService-Info.plist */,
 				BF5E03171E2E26890006EECF /* Resources */,
 				BF5E03161E2E26840006EECF /* Services */,
@@ -176,6 +186,7 @@
 				BF5933141E395EB10015428B /* EventDetailVC.swift */,
 				BF5933161E3966130015428B /* EventDetailTableVC.swift */,
 				BF59331E1E397A800015428B /* WebViewDetailVC.swift */,
+				BF5933221E3B17700015428B /* LadderDetailCollectionVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -191,6 +202,8 @@
 				BF75D7C01E32E05B0060F0AA /* GradeCell.swift */,
 				BF75D7C41E35FBC50060F0AA /* EventCell.swift */,
 				BF5933201E3AFCD20015428B /* FinalMatchCell.swift */,
+				BF5933241E3B17B20015428B /* LadderCollectionViewCell.swift */,
+				BF5933261E3B181E0015428B /* LadderCollectionViewLayout.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -215,6 +228,7 @@
 				BF5E031E1E2E2FDA0006EECF /* DataService.swift */,
 				BF5E03201E2E32920006EECF /* Constants.swift */,
 				BF75D7CA1E361B170060F0AA /* SocialNetworks.swift */,
+				BF5290651E4E8292004DF19B /* LoaderOverlay.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -279,6 +293,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = H3A77962QT;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -375,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5933271E3B181E0015428B /* LadderCollectionViewLayout.swift in Sources */,
 				BF5E03071E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld in Sources */,
 				BF4C22091E39B0F800938EF2 /* FinalMatch.swift in Sources */,
 				BF75D7CB1E361B170060F0AA /* SocialNetworks.swift in Sources */,
@@ -382,6 +402,7 @@
 				BF75D7BD1E32D7780060F0AA /* LaddersVC.swift in Sources */,
 				BF5E03231E2F597F0006EECF /* NewsTableVC.swift in Sources */,
 				BF5E03251E30BAD10006EECF /* News.swift in Sources */,
+				BF5933251E3B17B20015428B /* LadderCollectionViewCell.swift in Sources */,
 				BF75D7C11E32E05B0060F0AA /* GradeCell.swift in Sources */,
 				BF75D7C51E35FBC50060F0AA /* EventCell.swift in Sources */,
 				BF5E03271E30BB5E0006EECF /* NewsCell.swift in Sources */,
@@ -404,6 +425,8 @@
 				BF5E031B1E2E2BFC0006EECF /* LargeTextField.swift in Sources */,
 				BF75D7BF1E32D9520060F0AA /* Grade.swift in Sources */,
 				BF59331F1E397A800015428B /* WebViewDetailVC.swift in Sources */,
+				BF5933231E3B17700015428B /* LadderDetailCollectionVC.swift in Sources */,
+				BF5290661E4E8292004DF19B /* LoaderOverlay.swift in Sources */,
 				BF75D7C31E35FBA00060F0AA /* Event.swift in Sources */,
 				BF75D7B91E32BBDE0060F0AA /* RoundDetailTableVC.swift in Sources */,
 			);
@@ -529,6 +552,7 @@
 			baseConfigurationReference = E4079F8474810B45D87E2CF3 /* Pods-Stanhope FNC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Stanhope FNC/Stanhope FNC.entitlements";
 				DEVELOPMENT_TEAM = H3A77962QT;
 				INFOPLIST_FILE = "Stanhope FNC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -544,6 +568,7 @@
 			baseConfigurationReference = A4A3877052992BDC9EED4FC6 /* Pods-Stanhope FNC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Stanhope FNC/Stanhope FNC.entitlements";
 				DEVELOPMENT_TEAM = H3A77962QT;
 				INFOPLIST_FILE = "Stanhope FNC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

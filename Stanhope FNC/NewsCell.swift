@@ -15,6 +15,7 @@ class NewsCell: UITableViewCell {
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var newsImg: UIImageView!
+    @IBOutlet weak var publishedDate: UILabel!
     
     var news: News!
     //var request: Request?
@@ -42,7 +43,10 @@ class NewsCell: UITableViewCell {
         self.news = news
         
         self.title.text = news.title
-        //self.likesLabel.text = "\(news.likes)"
+        let convertedDate = newsDateStringToNSDate(date: news.pubDate!)
+        let dateString = NewsDateToString(date: convertedDate)
+        self.publishedDate.text = dateString
+        
         
         if news.imgUrl != nil {
             
@@ -51,13 +55,13 @@ class NewsCell: UITableViewCell {
                 self.newsImg.image = img
                 
             } else {
-                
+ 
                 var request = Alamofire.request(news.imgUrl!).responseImage { response in
                     if let image  = response.result.value {
                         self.newsImg.image = image
                     }
                 }
-                
+
 //                request = Alamofire.request(.GET, news.imgUrl!).validate(contentType: ["image/*"]).response(completionHandler: { request, response, data, err in
 //                    
 //                    if err == nil {
