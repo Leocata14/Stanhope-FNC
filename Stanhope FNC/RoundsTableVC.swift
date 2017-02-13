@@ -24,9 +24,18 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
     
      @IBOutlet weak var roundsTableView: UITableView!
     //@IBOutlet weak var roundsSegmentedControl: XMSegmentedControl!
+     @IBOutlet weak var addRoundBarButton: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        DataService.ds.checkAdminUser()
+        
+        if ADMIN_USER == false {
+            self.navigationItem.rightBarButtonItem = nil
+        } else {
+            self.navigationItem.rightBarButtonItem = addRoundBarButton
+        }
         
         roundsTableView.delegate = self
         roundsTableView.dataSource = self
@@ -178,25 +187,41 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
     
  
 
-    /*
+    
     // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
-        return true
+        if ADMIN_USER == false {
+            return false
+        } else {
+            return true
+        }
     }
-    */
+    
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
+            
+            print("edit tapped")
+            print("key: \(self.rounds[indexPath.row].roundKey)")
+            //self.currRound = self.rounds[indexPath.row]
+            //self.performSegueWithIdentifier(SEGUE_EDIT_ROUND, sender: nil)
+        }
+        
+        edit.backgroundColor = UIColor.orange
+        
+        let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
+            //PUT SOME SORT OF ALERT HERE FIRST TO CONFIRM DELETION
+            DataService.ds.REF_ROUNDS.child(self.rounds[indexPath.row].roundKey).removeValue()
+            print("delete tapped")
+            
+        }
+        
+        delete.backgroundColor = UIColor.red
+        
+        
+        return [delete, edit]
     }
-    */
 
     /*
     // Override to support rearranging the table view.
@@ -230,6 +255,8 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
             }
         }
     }
+    
+    
     
 
 }

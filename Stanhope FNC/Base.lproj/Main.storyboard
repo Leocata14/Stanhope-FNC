@@ -387,7 +387,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="lYu-A9-nvu">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="254.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="255"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4hf-T2-Nua">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
@@ -396,16 +396,16 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vHq-JJ-9UP">
-                                                    <rect key="frame" x="0.0" y="220" width="166" height="34.5"/>
+                                                    <rect key="frame" x="0.0" y="220" width="166" height="35"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="News Article Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sm-c6-Hsz">
-                                                            <rect key="frame" x="0.0" y="0.0" width="166" height="16.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="166" height="17"/>
                                                             <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="24"/>
                                                             <color key="textColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Published Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpa-Ut-NW2">
-                                                            <rect key="frame" x="0.0" y="16.5" width="166" height="18"/>
+                                                            <rect key="frame" x="0.0" y="17" width="166" height="18"/>
                                                             <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="14"/>
                                                             <color key="textColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -608,14 +608,46 @@
                             <constraint firstItem="Yij-JO-lZO" firstAttribute="leading" secondItem="jc2-Zy-UlR" secondAttribute="leading" id="tMc-JY-dpR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="FIXTURE" id="hn1-P6-a3P"/>
+                    <navigationItem key="navigationItem" title="FIXTURE" id="hn1-P6-a3P">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dWg-uE-DqB">
+                            <connections>
+                                <segue destination="jpC-gT-sZD" kind="show" identifier="addRound" id="SGP-K3-Zhl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="addRoundBarButton" destination="dWg-uE-DqB" id="s4P-IP-LcF"/>
                         <outlet property="roundsTableView" destination="Yij-JO-lZO" id="F7g-rp-nFs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sy1-A1-sbn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3754" y="1012"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="2C3-qP-t9d">
+            <objects>
+                <viewController id="jpC-gT-sZD" customClass="AddRoundVC" customModule="Stanhope_FNC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tE2-Yk-ttF"/>
+                        <viewControllerLayoutGuide type="bottom" id="dbe-eU-TCS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XtU-4d-DCu">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="A5d-jb-oR2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="9mH-Ia-bSu">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="jpC-gT-sZD" id="EEa-HW-gXi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjK-bW-GeR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3753" y="1782"/>
         </scene>
         <!--Round Detail TableVC-->
         <scene sceneID="eXK-KT-u48">
@@ -1017,7 +1049,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fx3-Du-tYb">
-                                                    <rect key="frame" x="18" y="13" width="339" height="74"/>
+                                                    <rect key="frame" x="18" y="13" width="339" height="73"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-7I-304">
                                                             <rect key="frame" x="0.0" y="0.0" width="58" height="63.5"/>
@@ -1037,22 +1069,22 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rV3-A5-oXk">
-                                                            <rect key="frame" x="78" y="0.0" width="261" height="74"/>
+                                                            <rect key="frame" x="78" y="0.0" width="261" height="73"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENT TITLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z80-57-5Wy">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="137.5" height="33"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="137.5" height="32.5"/>
                                                                     <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="26"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9e-1E-zK8">
-                                                                    <rect key="frame" x="0.0" y="33" width="50" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="32.5" width="50" height="20.5"/>
                                                                     <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="16"/>
                                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENT LOCATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDR-Rz-xE2">
-                                                                    <rect key="frame" x="0.0" y="53.5" width="113" height="20.5"/>
+                                                                    <rect key="frame" x="0.0" y="53" width="113" height="20"/>
                                                                     <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="16"/>
                                                                     <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>

@@ -12,6 +12,10 @@ import UIKit
 let KEY_UID = "uid"
 var ADMIN_USER = false
 
+//Picker Values
+let OPPOSITION_TEAMS = ["Bye","Adrmona","Avenel","Girgarre","Lancaster","Longwood","Merrigum","Murchison","Nagambie","Rushworth","Tallygaroopna","Undera","Violet Town"]
+let ROUND_STATUS = ["Complete","Upcoming","In Progress"]
+let PLAYED_AT = ["Home","Away"]
 
 //Segues
 let SEGUE_LOGGED_IN = "loggedIn"
@@ -22,6 +26,7 @@ let SEGUE_ABOUT = "goToAbout"
 let SEGUE_FEEDBACK = "goToFeedback"
 let SEGUE_LADDER = "showLadder"
 let SEGUE_MATCHES = "showMatches"
+let SEGUE_EDIT_ROUND = "editRound"
 
 //Status cODES
 let STATUS_ACCOUNT_NONEXIST = 17011
@@ -113,6 +118,14 @@ func roundDateStringToNSDate(date: String) -> Date {
 func DateToString(date: Date) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "MMM dd, yyyy, hh:mm"
+    dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT+0:00") as TimeZone!
+    let stringFromDate = dateFormatter.string(from: date)
+    return stringFromDate as String
+}
+
+func RoundDateToString(date: Date) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MMM dd, yyyy"
     dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT+0:00") as TimeZone!
     let stringFromDate = dateFormatter.string(from: date)
     return stringFromDate as String

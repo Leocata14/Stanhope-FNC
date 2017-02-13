@@ -20,5 +20,6 @@ pod 'AlamofireImage', '~> 3.1'
 pod 'Kingfisher', '~> 3.0'
 pod 'XMSegmentedControl'
 pod 'Kanna', '~> 2.1.0'
+pod 'Eureka', '~> 2.0.0-beta.1'
 
 end

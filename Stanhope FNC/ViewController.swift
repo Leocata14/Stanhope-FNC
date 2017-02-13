@@ -53,8 +53,16 @@ class ViewController: UIViewController {
                         } else {
                             print("JASE: Successfully authenticated with Firebase/Email")
                             //Save to Firebase here
+                            let uservalues = ["email":user?.email,"provider":"Email"]
                             let uid = user?.uid
-                            DataService.ds.REF_USERS.child(uid!)
+                            DataService.ds.REF_USERS.child(uid!).updateChildValues(uservalues, withCompletionBlock: { (error, ref) in
+                                if error != nil {
+                                    //Something wrong
+                                    print(error)
+                                } else {
+                                    print("JASE: Saved to Firbase Database!")
+                                }
+                            })
                             
                             if let user = user {
                                 self.completeSignIn(id: user.uid)
@@ -98,6 +106,19 @@ class ViewController: UIViewController {
             } else {
                 print("JASE: Successfully authenticated with Firebase")
                 if let user = user {
+                    //Save to Firebase here
+                    let uservalues = ["email":user.email,"provider":"Facebook","name":user.displayName]
+                    let uid = user.uid
+                    DataService.ds.REF_USERS.child(uid).updateChildValues(uservalues, withCompletionBlock: { (error, ref) in
+                        if error != nil {
+                            //Something wrong
+                            print(error)
+                        } else {
+                            print("JASE: Saved to Firbase Database!")
+                        }
+                    })
+                    
+                    
                     self.completeSignIn(id: user.uid)
                 }
                 

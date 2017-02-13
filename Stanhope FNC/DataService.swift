@@ -8,8 +8,10 @@
 
 import Foundation
 import Firebase
+import FirebaseAuth
 import FirebaseDatabase
 import FirebaseStorage
+import SwiftKeychainWrapper
 
 
 let URL_BASE = FIRDatabase.database().reference()
@@ -85,9 +87,10 @@ class DataService {
     }
     
     var REF_USER_CURRENT: FIRDatabaseReference {
-        let uid = UserDefaults.standard.value(forKey: KEY_UID) as! String
-        let user = URL_BASE.child("users").child(uid)
+        let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
+        let user = URL_BASE.child("users").child(uid!)
         return user
+        
     }
     
     func createFirebaseUsers(userData: Dictionary<String, String>){
@@ -95,5 +98,27 @@ class DataService {
         if (UserDefaults.standard.value(forKey: KEY_UID) != nil) {
             REF_USER_CURRENT.updateChildValues(userData)
         }
+    }
+    
+    func checkAdminUser(){
+        if let userId = FIRAuth.auth()?.currentUser?.uid {
+            REF_USERS.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
+                let userDict = snapshot.value as? [String: AnyObject] ?? [:]
+                if let role = userDict["role"] as? String {
+                    if role == "admin" {
+                        print("We have an admin user here guys!")
+                        ADMIN_USER = true
+                    } else {
+                        print("Just a regular user here peeps")
+                        ADMIN_USER = false
+                    }
+                }
+                
+            })
+        } else {
+            ADMIN_USER = false
+        }
+        
+        
     }
 }

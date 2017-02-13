@@ -17,6 +17,8 @@ class NewsTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        DataService.ds.checkAdminUser()
+        
         if news.count == 0 {
             LoaderOverlay.shared.show()
         } else {
