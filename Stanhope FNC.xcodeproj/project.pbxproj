@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00317099795B7853202199F4 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64D6604A6E769E37F5410DF /* AssetsLibrary.framework */; };
+		0AB3116C96097B86C5DE2D81 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 542FBB71CE41CB71F6A09AAD /* CoreMedia.framework */; };
 		107FC68845C6EA607EB37291 /* Pods_Stanhope_FNC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE271A8AECA0A4A189BA59C5 /* Pods_Stanhope_FNC.framework */; };
+		83C73A38A250AD788E23B3C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3F3D573528908189B12E77 /* AVFoundation.framework */; };
+		84583B5FBF571339672D51BE /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4C996AECD24B6652063FD9 /* BuddyBuildSDK.framework */; };
+		904B4AB75073B1C2AD69C3DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D7333229CE063E5771B21A /* QuartzCore.framework */; };
+		B967C8294B46227BA1E7ACCD /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEAFBBCCE0FF95C45A9E8D0F /* CoreTelephony.framework */; };
+		BD1F2B69D3A226F0B90278B0 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD0C742842838F874317E784 /* CoreText.framework */; };
 		BF4C22071E39A77900938EF2 /* FinalMatchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */; };
 		BF4C22091E39B0F800938EF2 /* FinalMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C22081E39B0F800938EF2 /* FinalMatch.swift */; };
 		BF4C220D1E39C2B800938EF2 /* FinalsRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C220C1E39C2B800938EF2 /* FinalsRound.swift */; };
@@ -72,10 +79,17 @@
 		BFA88BBE1E6D5B9800389F81 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BBD1E6D5B9800389F81 /* SignUpVC.swift */; };
 		BFA88BC01E6D6B0A00389F81 /* NameAndPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BBF1E6D6B0A00389F81 /* NameAndPasswordVC.swift */; };
 		BFA88BC21E6D762700389F81 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BC11E6D762700389F81 /* SignInVC.swift */; };
+		E9AF4DA394D45B61A1264FC8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A297D9EF018689613ED0F08 /* SystemConfiguration.framework */; };
+		FC5860B9AC3F9A3481BE08B5 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8F976DA438DE0DBFF6AEBC2 /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3F3D573528908189B12E77 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		53D7333229CE063E5771B21A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		542FBB71CE41CB71F6A09AAD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		6A297D9EF018689613ED0F08 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A4A3877052992BDC9EED4FC6 /* Pods-Stanhope FNC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stanhope FNC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stanhope FNC/Pods-Stanhope FNC.release.xcconfig"; sourceTree = "<group>"; };
+		A64D6604A6E769E37F5410DF /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalMatchCell.xib; sourceTree = "<group>"; };
 		BF4C22081E39B0F800938EF2 /* FinalMatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalMatch.swift; sourceTree = "<group>"; };
 		BF4C220C1E39C2B800938EF2 /* FinalsRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalsRound.swift; sourceTree = "<group>"; };
@@ -148,7 +162,11 @@
 		BFA88BBD1E6D5B9800389F81 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		BFA88BBF1E6D6B0A00389F81 /* NameAndPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameAndPasswordVC.swift; sourceTree = "<group>"; };
 		BFA88BC11E6D762700389F81 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		DD0C742842838F874317E784 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DEAFBBCCE0FF95C45A9E8D0F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		E4079F8474810B45D87E2CF3 /* Pods-Stanhope FNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stanhope FNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stanhope FNC/Pods-Stanhope FNC.debug.xcconfig"; sourceTree = "<group>"; };
+		EE4C996AECD24B6652063FD9 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		F8F976DA438DE0DBFF6AEBC2 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		FE271A8AECA0A4A189BA59C5 /* Pods_Stanhope_FNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stanhope_FNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,6 +176,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				107FC68845C6EA607EB37291 /* Pods_Stanhope_FNC.framework in Frameworks */,
+				84583B5FBF571339672D51BE /* BuddyBuildSDK.framework in Frameworks */,
+				00317099795B7853202199F4 /* AssetsLibrary.framework in Frameworks */,
+				BD1F2B69D3A226F0B90278B0 /* CoreText.framework in Frameworks */,
+				B967C8294B46227BA1E7ACCD /* CoreTelephony.framework in Frameworks */,
+				E9AF4DA394D45B61A1264FC8 /* SystemConfiguration.framework in Frameworks */,
+				904B4AB75073B1C2AD69C3DC /* QuartzCore.framework in Frameworks */,
+				83C73A38A250AD788E23B3C2 /* AVFoundation.framework in Frameworks */,
+				0AB3116C96097B86C5DE2D81 /* CoreMedia.framework in Frameworks */,
+				FC5860B9AC3F9A3481BE08B5 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +195,15 @@
 			isa = PBXGroup;
 			children = (
 				FE271A8AECA0A4A189BA59C5 /* Pods_Stanhope_FNC.framework */,
+				EE4C996AECD24B6652063FD9 /* BuddyBuildSDK.framework */,
+				A64D6604A6E769E37F5410DF /* AssetsLibrary.framework */,
+				DD0C742842838F874317E784 /* CoreText.framework */,
+				DEAFBBCCE0FF95C45A9E8D0F /* CoreTelephony.framework */,
+				6A297D9EF018689613ED0F08 /* SystemConfiguration.framework */,
+				53D7333229CE063E5771B21A /* QuartzCore.framework */,
+				3B3F3D573528908189B12E77 /* AVFoundation.framework */,
+				542FBB71CE41CB71F6A09AAD /* CoreMedia.framework */,
+				F8F976DA438DE0DBFF6AEBC2 /* CoreVideo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -656,6 +692,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Stanhope FNC/Stanhope FNC.entitlements";
 				DEVELOPMENT_TEAM = H3A77962QT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Stanhope FNC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -673,6 +713,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Stanhope FNC/Stanhope FNC.entitlements";
 				DEVELOPMENT_TEAM = H3A77962QT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Stanhope FNC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
