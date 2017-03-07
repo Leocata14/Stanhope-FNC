@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BlJ-Oc-Eqj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-Bold.otf">
+            <string>Dosis-Bold</string>
+        </array>
+        <array key="Dosis-Regular.otf">
+            <string>Dosis-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Title-->
+        <scene sceneID="cnO-Wu-8PV">
+            <objects>
+                <viewController id="Xzb-Ms-wOI" customClass="AddEventVC" customModule="Stanhope_FNC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="E0g-K7-066"/>
+                        <viewControllerLayoutGuide type="bottom" id="sy7-Tk-m2N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pf1-od-si4">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="tOY-Mi-0wZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="JAf-xW-RuC">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="Xzb-Ms-wOI" id="Lx1-MM-usr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tob-hQ-BIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5162" y="-1355"/>
+        </scene>
+        <!--EVENTS-->
+        <scene sceneID="zyA-Ur-Kyn">
+            <objects>
+                <tableViewController title="EVENTS" id="kuG-h0-LSN" customClass="EventTableVC" customModule="Stanhope_FNC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="230" sectionHeaderHeight="28" sectionFooterHeight="28" id="izM-Fd-eE3">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" rowHeight="270" id="L3E-W3-nQH" customClass="EventCell" customModule="Stanhope_FNC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="270"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L3E-W3-nQH" id="uz9-Jz-se4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="269"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Event Image Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Mtd-xr-0wU">
+                                            <rect key="frame" x="8" y="8" width="359" height="180"/>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="X9K-6N-GN4">
+                                            <rect key="frame" x="8" y="192" width="359" height="69"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fgw-js-eoA">
+                                                    <rect key="frame" x="0.0" y="0.0" width="70.5" height="69"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s64-vN-gc2">
+                                                            <rect key="frame" x="19" y="0.0" width="32.5" height="40.5"/>
+                                                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="32"/>
+                                                            <color key="textColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMo-2O-7KP">
+                                                            <rect key="frame" x="19.5" y="46" width="31.5" height="23"/>
+                                                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="18"/>
+                                                            <color key="textColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="e4a-68-p14">
+                                                    <rect key="frame" x="90.5" y="0.0" width="268.5" height="69"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENT TITLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NGC-Ev-JAb">
+                                                            <rect key="frame" x="0.0" y="0.0" width="85" height="23"/>
+                                                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="16"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIt-fg-wiy">
+                                                            <rect key="frame" x="0.0" y="23" width="50" height="23"/>
+                                                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="16"/>
+                                                            <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENT LOCATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqx-6J-HzG">
+                                                            <rect key="frame" x="0.0" y="46" width="113" height="23"/>
+                                                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="16"/>
+                                                            <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Mtd-xr-0wU" firstAttribute="top" secondItem="uz9-Jz-se4" secondAttribute="top" constant="8" id="7tz-Sg-PaS"/>
+                                        <constraint firstItem="X9K-6N-GN4" firstAttribute="leading" secondItem="uz9-Jz-se4" secondAttribute="leading" constant="8" id="GRe-4P-Sl8"/>
+                                        <constraint firstItem="X9K-6N-GN4" firstAttribute="top" secondItem="Mtd-xr-0wU" secondAttribute="bottom" constant="4" id="LV8-oI-rJq"/>
+                                        <constraint firstItem="X9K-6N-GN4" firstAttribute="top" secondItem="Mtd-xr-0wU" secondAttribute="bottom" constant="4" id="PJQ-0D-D4e"/>
+                                        <constraint firstAttribute="trailing" secondItem="X9K-6N-GN4" secondAttribute="trailing" constant="8" id="UAz-wG-Eq1"/>
+                                        <constraint firstItem="Mtd-xr-0wU" firstAttribute="leading" secondItem="uz9-Jz-se4" secondAttribute="leading" constant="8" id="al2-gF-ay0"/>
+                                        <constraint firstAttribute="bottom" secondItem="X9K-6N-GN4" secondAttribute="bottom" constant="8" id="gPl-Wz-4q4"/>
+                                        <constraint firstAttribute="trailing" secondItem="Mtd-xr-0wU" secondAttribute="trailing" constant="8" id="k8b-wI-0rY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="eventDayLabel" destination="s64-vN-gc2" id="4a6-DB-l9I"/>
+                                    <outlet property="eventImageView" destination="Mtd-xr-0wU" id="K2a-fw-wmk"/>
+                                    <outlet property="eventLocationLabel" destination="Pqx-6J-HzG" id="vdb-SI-39D"/>
+                                    <outlet property="eventMonthLabel" destination="vMo-2O-7KP" id="9WO-MA-1og"/>
+                                    <outlet property="eventTimeLabel" destination="UIt-fg-wiy" id="wTm-qC-QTD"/>
+                                    <outlet property="eventTitle" destination="NGC-Ev-JAb" id="r9F-AV-CIL"/>
+                                    <segue destination="yn7-TP-J1U" kind="show" identifier="eventDetail" id="rxr-RZ-tfN"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="kuG-h0-LSN" id="Uah-WI-kvc"/>
+                            <outlet property="delegate" destination="kuG-h0-LSN" id="70Z-zt-v9y"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="EVENTS" id="0Zq-pu-nG1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="s9z-6f-3jf">
+                            <connections>
+                                <segue destination="Xzb-Ms-wOI" kind="show" identifier="addEvent" id="V0F-NK-Dip"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="eventTableView" destination="izM-Fd-eE3" id="EGu-sk-QGf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8b7-rz-38k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4772" y="-671.51424287856082"/>
+        </scene>
+        <!--Event Detail TableVC-->
+        <scene sceneID="G3j-NE-etM">
+            <objects>
+                <tableViewController id="yn7-TP-J1U" customClass="EventDetailTableVC" customModule="Stanhope_FNC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="BX7-Jg-dJj">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="cVD-FQ-rkX">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="b6M-gU-Vpw">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b6M-gU-Vpw" id="TWp-x8-VK1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Event Image Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="DaA-FE-xLH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Nvj-c3-SiC">
+                                        <rect key="frame" x="0.0" y="200" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nvj-c3-SiC" id="1nl-7z-znL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fx3-Du-tYb">
+                                                    <rect key="frame" x="18" y="13" width="339" height="73"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-7I-304">
+                                                            <rect key="frame" x="0.0" y="0.0" width="57.5" height="58.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Di3-gm-gqc">
+                                                                    <rect key="frame" x="11" y="0.0" width="36" height="37.5"/>
+                                                                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="32"/>
+                                                                    <color key="textColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8f-pk-lDn">
+                                                                    <rect key="frame" x="11" y="37.5" width="35.5" height="21"/>
+                                                                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="18"/>
+                                                                    <color key="textColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rV3-A5-oXk">
+                                                            <rect key="frame" x="77.5" y="0.0" width="261.5" height="68.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENT TITLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z80-57-5Wy">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="156" height="30.5"/>
+                                                                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="26"/>
+                                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9e-1E-zK8">
+                                                                    <rect key="frame" x="0.0" y="30.5" width="55.5" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="16"/>
+                                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENT LOCATION" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDR-Rz-xE2">
+                                                                    <rect key="frame" x="0.0" y="49.5" width="133.5" height="19"/>
+                                                                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="16"/>
+                                                                    <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Fx3-Du-tYb" secondAttribute="trailing" constant="10" id="3Xp-t4-35I"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Fx3-Du-tYb" secondAttribute="bottom" constant="5" id="9g2-IE-UqD"/>
+                                                <constraint firstItem="Fx3-Du-tYb" firstAttribute="leading" secondItem="1nl-7z-znL" secondAttribute="leadingMargin" constant="10" id="BKc-bC-8kk"/>
+                                                <constraint firstItem="Fx3-Du-tYb" firstAttribute="top" secondItem="1nl-7z-znL" secondAttribute="topMargin" constant="5" id="jZa-3o-c0c"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="238" id="6Xd-zN-l2s">
+                                        <rect key="frame" x="0.0" y="300" width="375" height="238"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Xd-zN-l2s" id="KrM-M8-XSq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="237"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dQr-5o-aKw">
+                                                    <rect key="frame" x="8" y="8" width="359" height="221"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" red="0.28627450980000002" green="0.28627450980000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="dQr-5o-aKw" firstAttribute="bottom" secondItem="KrM-M8-XSq" secondAttribute="bottomMargin" id="ip8-Xl-AYb"/>
+                                                <constraint firstItem="dQr-5o-aKw" firstAttribute="top" secondItem="KrM-M8-XSq" secondAttribute="topMargin" id="mIK-Sk-cCd"/>
+                                                <constraint firstItem="dQr-5o-aKw" firstAttribute="leading" secondItem="KrM-M8-XSq" secondAttribute="leadingMargin" id="sYt-WM-TRh"/>
+                                                <constraint firstItem="dQr-5o-aKw" firstAttribute="trailing" secondItem="KrM-M8-XSq" secondAttribute="trailingMargin" id="yAA-eY-grk"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="yh7-KM-z2b">
+                                        <rect key="frame" x="0.0" y="538" width="375" height="40"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yh7-KM-z2b" id="CQV-TK-LX6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="yn7-TP-J1U" id="63T-RZ-oZs"/>
+                            <outlet property="delegate" destination="yn7-TP-J1U" id="HZc-I6-qdj"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="eventDateLabel" destination="Di3-gm-gqc" id="em1-CH-zeb"/>
+                        <outlet property="eventDescriptionLabel" destination="dQr-5o-aKw" id="e6f-es-MDz"/>
+                        <outlet property="eventImageView" destination="DaA-FE-xLH" id="Yok-oZ-mhJ"/>
+                        <outlet property="eventLocationLabel" destination="sDR-Rz-xE2" id="sRP-gT-HJt"/>
+                        <outlet property="eventMonthLabel" destination="R8f-pk-lDn" id="2NQ-Rh-cAI"/>
+                        <outlet property="eventTimeLabel" destination="a9e-1E-zK8" id="Mfe-nK-gMM"/>
+                        <outlet property="eventTitleLabel" destination="Z80-57-5Wy" id="cwe-p5-BTf"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QTc-fj-L1y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5728.8000000000002" y="-672.41379310344837"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="wmc-57-Y5k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BlJ-Oc-Eqj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Events" image="Events" selectedImage="Event-Filled" id="6YG-Fk-i3K"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO">
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </simulatedTabBarMetrics>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="G4a-5o-sqD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.80000000000000004" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kuG-h0-LSN" kind="relationship" relationship="rootViewController" id="UV7-pq-MTf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Os-kE-oZl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3832.8000000000002" y="-672.41379310344837"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Event Image Placeholder" width="359" height="180"/>
+        <image name="Event-Filled" width="15" height="24"/>
+        <image name="Events" width="15" height="24"/>
+    </resources>
+</document>

@@ -63,6 +63,7 @@ PODS:
   - Kanna (2.1.1)
   - Kingfisher (3.2.4)
   - SwiftKeychainWrapper (3.0.1)
+  - SwiftyGif (3.0.0)
   - XMSegmentedControl (0.1.4)
 
 DEPENDENCIES:
@@ -79,6 +80,7 @@ DEPENDENCIES:
   - Kanna (~> 2.1.0)
   - Kingfisher (~> 3.0)
   - SwiftKeychainWrapper
+  - SwiftyGif
   - XMSegmentedControl
 
 SPEC CHECKSUMS:
@@ -103,8 +105,9 @@ SPEC CHECKSUMS:
   Kanna: 9b4b086c218703f2b94f5b21a466217dd2f9332e
   Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
+  SwiftyGif: d6b4d63de2a2a5134d8b54ba5719837319d77ef0
   XMSegmentedControl: 51cf4f3daf14920692a064d9252aa7b29622dda6
 
-PODFILE CHECKSUM: 89a74257ef02736da97e4340fd79d011527d4e81
+PODFILE CHECKSUM: 6644b719b32e4ca3acc33c56973001b9fd67c833
 
 COCOAPODS: 1.1.1

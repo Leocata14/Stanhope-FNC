@@ -21,12 +21,12 @@ class LadderDetailCollectionVC: UICollectionViewController {
     var ladderRow = Array<String>()
     var ladderArray = Array<Array<String>>()
     
-    var football = true
+    var football = Bool()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         ladderArray.append(self.ladderRow)
-
+        print("Is Football: \(football)")
         // Do any additional setup after loading the view.
     }
 
@@ -101,7 +101,7 @@ class LadderDetailCollectionVC: UICollectionViewController {
         }
         
         Alamofire.request(url).responseString { response in
-            print("\(response.result.isSuccess)")
+            //print("\(response.result.isSuccess)")
             if let html = response.result.value {
                 self.parseHTML(html: html)
             }
@@ -128,7 +128,7 @@ class LadderDetailCollectionVC: UICollectionViewController {
                         }
                     }
                     ladderArray.remove(at: 0)
-                    print(ladderArray)
+                    //print(ladderArray)
                 }
             }
             let layout = self.collectionView?.collectionViewLayout as? LadderCollectionViewLayout
@@ -137,7 +137,7 @@ class LadderDetailCollectionVC: UICollectionViewController {
         } else {
             if let doc = Kanna.HTML(html: html, encoding: String.Encoding.utf8) {
                 for heading in doc.css("td[class^='h2']") {
-                    if (heading.content?.contains("A Grade"))! {
+                    if (heading.content?.contains(self.grade.shortName!))! {
                         if let tr = heading.parent {
                             let fullTable = tr.parent
                             for table in (fullTable?.css("table[id^='tblLadderInner']"))! {
@@ -163,7 +163,7 @@ class LadderDetailCollectionVC: UICollectionViewController {
                                 }
                                 
                                 ladderArray.remove(at: 0)
-                                print(ladderArray)
+                                //print(ladderArray)
                             }
                         }
                     }
@@ -174,39 +174,6 @@ class LadderDetailCollectionVC: UICollectionViewController {
             self.collectionView!.reloadData()
         }
     }
-    
 
-    
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
 
 }

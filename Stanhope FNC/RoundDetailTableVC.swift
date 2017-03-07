@@ -17,6 +17,8 @@ class RoundDetailTableVC: UITableViewController {
     var roundMatches: Dictionary<String,AnyObject> = [:]
     var matchKeys: Array = [""]
     
+    var tappedMatch: Match?
+    
     @IBOutlet weak var matchesTableView: UITableView!
     @IBOutlet weak var stanImageView: UIImageView!
     @IBOutlet weak var oppositionImageView: UIImageView!
@@ -31,8 +33,14 @@ class RoundDetailTableVC: UITableViewController {
         
         setUpUi()
         
-
+        getMatches()
         
+        
+        
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
+    }
+    
+    func getMatches(){
         DataService.ds.REF_MATCHES.observe(.value, with: { (snapshot) -> Void in
             print("matches changed")
             self.matches = []
@@ -51,14 +59,19 @@ class RoundDetailTableVC: UITableViewController {
                     }
                     
                 }
+                //Send Notifcation
+                /*
+                self.scheduleNotification(inSeconds: 5, grade: matchDict["grade"] as! String, stanScore: matchDict["stanhopeScore"] as! String, oppScore: matchDict["oppositionScore"] as! String, completion: { success in
+                    if success {
+                        print("Successfully schedule notification")
+                    } else {
+                        print("Error scheduling notification")
+                    }
+                })*/
             }
             
             self.matchesTableView.reloadData()
         })
-        
-        
-        
-        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
     
     func setUpUi() {
@@ -125,50 +138,76 @@ class RoundDetailTableVC: UITableViewController {
         }
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    @IBAction func addButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: SEGUE_EDIT_MATCH, sender: nil)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        getMatches()
     }
-    */
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let edit = UITableViewRowAction(style: .normal, title: "Edit") { action, index in
+            self.tappedMatch = self.matches[indexPath.row]
+            self.performSegue(withIdentifier: SEGUE_EDIT_MATCH, sender: nil)
+        }
+        let delete = UITableViewRowAction(style: .normal, title: "Delete") { action, index in
+           let matchKey = self.matches[indexPath.row].matchKey
+            DataService.ds.REF_MATCHES.child(matchKey).removeValue()
+            DataService.ds.REF_ROUNDS.child(self.round.roundKey).child("matches").child(matchKey).removeValue()
+        }
+        edit.backgroundColor = UIColor.orange
+        delete.backgroundColor = UIColor.red
+        
+        
+        return [delete, edit]
     }
-    */
+    
+    @IBAction func unwindToRoundDetail(segue: UIStoryboardSegue) {}
 
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == SEGUE_EDIT_MATCH {
+            let destinationVC = segue.destination as! AddMatchVC
+            
+            destinationVC.roundKey = self.round.roundKey
+            
+            if let barButton = sender as? UIBarButtonItem {
+                destinationVC.match = nil
+                
+            } else {
+                destinationVC.match = tappedMatch
+                
+            }
+        }
     }
-    */
+    
+    /*
+    func scheduleNotification(inSeconds: TimeInterval, grade: String,stanScore: String,oppScore:String, completion: @escaping (_ Success: Bool) -> ()) {
+        let notif = UNMutableNotificationContent()
+        notif.title = "Match Complete"
+        notif.subtitle = "\(grade)"
+        notif.body = "Stanhope: \(stanScore); oppositionScore: \(oppScore)"
+        
+        let notifTrigger = UNTimeIntervalNotificationTrigger(timeInterval: inSeconds, repeats: false)
+        let notifRequest = UNNotificationRequest(identifier: "matchComplete", content: notif, trigger: notifTrigger)
+        
+        UNUserNotificationCenter.current().add(notifRequest, withCompletionHandler: { error in
+            if error != nil {
+                print(error)
+                completion(false)
+            } else {
+                completion(true)
+            }
+            
+        })
+    }*/
+    
 
 }

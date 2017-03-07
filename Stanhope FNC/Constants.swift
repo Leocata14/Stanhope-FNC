@@ -16,6 +16,7 @@ var ADMIN_USER = false
 let OPPOSITION_TEAMS = ["Bye","Adrmona","Avenel","Girgarre","Lancaster","Longwood","Merrigum","Murchison","Nagambie","Rushworth","Tallygaroopna","Undera","Violet Town"]
 let ROUND_STATUS = ["Complete","Upcoming","In Progress"]
 let PLAYED_AT = ["Home","Away"]
+let GRADES = ["Under 15s","Under 17s","C Grade","B Grade","A Grade","Under 18s","Reserves","Seniors"]
 
 //Segues
 let SEGUE_LOGGED_IN = "loggedIn"
@@ -27,6 +28,9 @@ let SEGUE_FEEDBACK = "goToFeedback"
 let SEGUE_LADDER = "showLadder"
 let SEGUE_MATCHES = "showMatches"
 let SEGUE_EDIT_ROUND = "editRound"
+let SEGUE_EDIT_MATCH = "editMatch"
+let SEGUE_ADD_EVENT = "addEvent"
+let SEGUE_EDIT_EVENT = "editEvent"
 
 //Status cODES
 let STATUS_ACCOUNT_NONEXIST = 17011
@@ -102,7 +106,7 @@ func newsDateStringToNSDate(date: String) -> Date {
 func NewsDateToString(date: Date) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "MMM dd, hh:mma"
-    dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT+0:00") as TimeZone!
+    dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT+11:00") as TimeZone!
     let stringFromDate = dateFormatter.string(from: date)
     return stringFromDate as String
 }
@@ -119,6 +123,14 @@ func DateToString(date: Date) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "MMM dd, yyyy, hh:mm"
     dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT+0:00") as TimeZone!
+    let stringFromDate = dateFormatter.string(from: date)
+    return stringFromDate as String
+}
+
+func eventDateToString(date: Date) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MMM dd, yyyy, hh:mm a"
+    dateFormatter.timeZone = NSTimeZone(abbreviation: "GMT+11:00") as TimeZone!
     let stringFromDate = dateFormatter.string(from: date)
     return stringFromDate as String
 }

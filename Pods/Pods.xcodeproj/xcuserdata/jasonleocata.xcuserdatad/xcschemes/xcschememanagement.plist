@@ -69,6 +69,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftyGif.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>XMSegmentedControl-XMSegmentedControl.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -87,12 +92,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>44CAD6CE523055ED339E87154473A254</key>
+		<key>15C31B1095634C91D727D01EEDD792E2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4979CFE85E51E152B8F0CBDC611250D5</key>
+		<key>3E7F712AB0A6C2512F16183A3BECE005</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3EB90AD0F317660ED1C9F2C1ED4EBDF4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>44CAD6CE523055ED339E87154473A254</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,27 +117,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>596B07EBD09110C0D828EF54B8D6732A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>850A30DD62D53300BC12E9B5A4A7791B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
+		<key>947D7B31389E62BD18332F47B7AD15B8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B438CD27A775141EF600CD273D835024</key>
+		<key>9EFE4C70245EE2857D336B8B9FA4E825</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -143,6 +148,11 @@
 			<true/>
 		</dict>
 		<key>C4944FEC314D1A66588651D006273ADE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C958EDE6C21DA590B8659505EAE26402</key>
 		<dict>
 			<key>primary</key>
 			<true/>

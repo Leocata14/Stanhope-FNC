@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="b7J-Fu-CFw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-Regular.otf">
+            <string>Dosis-Regular</string>
+        </array>
+        <array key="Dosis-SemiBold.otf">
+            <string>Dosis-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--NEWS-->
+        <scene sceneID="H3F-PC-bUG">
+            <objects>
+                <tableViewController id="vCY-Se-z7A" customClass="NewsTableVC" customModule="Stanhope_FNC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="275" sectionHeaderHeight="28" sectionFooterHeight="28" id="nQ7-ki-lyk">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" rowHeight="275" id="IXj-aQ-HfW" customClass="NewsCell" customModule="Stanhope_FNC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="275"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IXj-aQ-HfW" id="5Ja-CC-5CX">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="News Image Placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4hf-T2-Nua">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="220" id="4rU-NG-IYU"/>
+                                                <constraint firstAttribute="width" constant="375" id="w5e-Bp-h2U"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="BiH-m4-I6n">
+                                            <rect key="frame" x="8" y="222" width="359" height="50"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="News Article Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sm-c6-Hsz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="32"/>
+                                                    <fontDescription key="fontDescription" name="Dosis-SemiBold" family="Dosis" pointSize="24"/>
+                                                    <color key="textColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Published Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpa-Ut-NW2">
+                                                    <rect key="frame" x="0.0" y="32" width="80" height="18"/>
+                                                    <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="14"/>
+                                                    <color key="textColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4hf-T2-Nua" firstAttribute="top" secondItem="5Ja-CC-5CX" secondAttribute="top" id="DpE-Fo-Xq2"/>
+                                        <constraint firstAttribute="trailing" secondItem="4hf-T2-Nua" secondAttribute="trailing" id="MP8-xh-VqX"/>
+                                        <constraint firstItem="4hf-T2-Nua" firstAttribute="leading" secondItem="5Ja-CC-5CX" secondAttribute="leading" id="f2I-Rh-V3L"/>
+                                        <constraint firstItem="BiH-m4-I6n" firstAttribute="top" secondItem="4hf-T2-Nua" secondAttribute="bottom" constant="2" id="juY-IQ-PZn"/>
+                                        <constraint firstAttribute="bottom" secondItem="BiH-m4-I6n" secondAttribute="bottom" constant="2" id="ryy-cL-v4r"/>
+                                        <constraint firstAttribute="trailing" secondItem="BiH-m4-I6n" secondAttribute="trailing" constant="8" id="uvV-ZB-Qhf"/>
+                                        <constraint firstItem="BiH-m4-I6n" firstAttribute="leading" secondItem="5Ja-CC-5CX" secondAttribute="leading" constant="8" id="yTh-bO-HuP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="newsImg" destination="4hf-T2-Nua" id="aoS-fH-1Lu"/>
+                                    <outlet property="publishedDate" destination="mpa-Ut-NW2" id="hgs-jb-0Fc"/>
+                                    <outlet property="title" destination="9sm-c6-Hsz" id="Vlt-5M-utE"/>
+                                    <segue destination="e2k-XX-QJC" kind="show" identifier="newsDetail" id="ocb-3D-wbS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vCY-Se-z7A" id="PCm-ji-VNA"/>
+                            <outlet property="delegate" destination="vCY-Se-z7A" id="J1g-N1-PTW"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="NEWS" id="7cD-3b-sJb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IyU-Tx-OW5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3676" y="146.17691154422789"/>
+        </scene>
+        <!--NEWS-->
+        <scene sceneID="HjC-aI-8Yf">
+            <objects>
+                <viewController title="NEWS" automaticallyAdjustsScrollViewInsets="NO" id="e2k-XX-QJC" customClass="NewsDetailVC" customModule="Stanhope_FNC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F1D-Jj-ZTO"/>
+                        <viewControllerLayoutGuide type="bottom" id="dcm-54-c6b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cnY-Z4-Qu0">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zzP-VR-MsU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4bA-47-a4o">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                                <color key="tintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zzP-VR-MsU" secondAttribute="trailing" id="EGk-u8-lcD"/>
+                            <constraint firstItem="4bA-47-a4o" firstAttribute="leading" secondItem="cnY-Z4-Qu0" secondAttribute="leading" id="Egz-DP-OxD"/>
+                            <constraint firstItem="zzP-VR-MsU" firstAttribute="leading" secondItem="cnY-Z4-Qu0" secondAttribute="leading" id="Mvc-ny-eDR"/>
+                            <constraint firstItem="dcm-54-c6b" firstAttribute="top" secondItem="zzP-VR-MsU" secondAttribute="bottom" id="PBn-gi-LHJ"/>
+                            <constraint firstItem="4bA-47-a4o" firstAttribute="top" secondItem="F1D-Jj-ZTO" secondAttribute="bottom" id="PKb-ht-2VH"/>
+                            <constraint firstAttribute="trailing" secondItem="4bA-47-a4o" secondAttribute="trailing" id="oSs-AH-5OD"/>
+                            <constraint firstItem="zzP-VR-MsU" firstAttribute="top" secondItem="4bA-47-a4o" secondAttribute="bottom" id="oY9-wu-jLA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="4bA-47-a4o" id="KhP-Ft-RYX"/>
+                        <outlet property="webView" destination="zzP-VR-MsU" id="VBu-gr-rox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6J-hW-QYC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4595.5" y="151.5"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="Bgk-FP-xr8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b7J-Fu-CFw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="News" image="News" selectedImage="News-Filled" id="ACk-u5-dj4"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO">
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </simulatedTabBarMetrics>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="c8Y-p3-nLT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.36470588240000001" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.80000000000000004" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vCY-Se-z7A" kind="relationship" relationship="rootViewController" id="GSX-yV-4hZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pum-aQ-0RI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2736.8000000000002" y="145.27736131934034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="News" width="24" height="24"/>
+        <image name="News Image Placeholder" width="359" height="220"/>
+        <image name="News-Filled" width="24" height="24"/>
+    </resources>
+</document>

@@ -38,9 +38,14 @@ class DataService {
     //Storage References
     private var _REF_STORAGE_BASE = STORAGE_BASE
     private var _REF_STORAGE_EVENTS = STORAGE_BASE.child("events")
+    private var _REF_STORAGE_PROFILEIMAGES = STORAGE_BASE.child("profileImages")
     
     var REF_STORAGE_EVENTS: FIRStorageReference {
         return _REF_STORAGE_EVENTS
+    }
+    
+    var REF_STORAGE_PROFILEIMAGES: FIRStorageReference {
+        return _REF_STORAGE_PROFILEIMAGES
     }
     
     var REF_BASE: FIRDatabaseReference {

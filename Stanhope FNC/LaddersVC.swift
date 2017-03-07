@@ -135,15 +135,8 @@ class LaddersVC: UIViewController, UITableViewDataSource,UITableViewDelegate, XM
         tableView.deselectRow(at: indexPath, animated: true)
 
         if  selectedIndex == 0 {
-            print("hey")
-            
             performSegue(withIdentifier: SEGUE_LADDER, sender: indexPath)
         } else if selectedIndex == 1 {
-            print("hey1")
-            
-        } else if selectedIndex == 2 {
-            print("hey2")
-            performSegue(withIdentifier: SEGUE_MATCHES, sender: indexPath)
         }
         
         gradesTableView.deselectRow(at: indexPath, animated: true)
@@ -155,25 +148,19 @@ class LaddersVC: UIViewController, UITableViewDataSource,UITableViewDelegate, XM
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
             if segue.identifier == SEGUE_LADDER {
-                if let indexPath = sender {
+                if let indexPath = sender as? IndexPath {
                     let destinationVC = segue.destination as! LadderDetailCollectionVC
-                    
-                    
-                    
+
                     let tappedGrade = grades[(indexPath as AnyObject).row]
                     
                     
-                    
+                    destinationVC.football = (tappedGrade.football)!
                     destinationVC.grade = tappedGrade
                     destinationVC.title = tappedGrade.name?.uppercased()
                     
-                    let netballGrades = ["A Grade","B Grade","C Grade","Under 15s","Under 17s"]
                     
-                    for gr in netballGrades {
-                        if gr == tappedGrade.name {
-                            destinationVC.football = false
-                        }
-                    }
+                    
+                    
                     
                 }
             

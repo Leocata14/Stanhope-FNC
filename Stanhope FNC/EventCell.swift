@@ -30,6 +30,8 @@ class EventCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        imageView?.layer.cornerRadius = 5
+        imageView?.clipsToBounds = true
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -39,6 +41,9 @@ class EventCell: UITableViewCell {
     }
     
     func configureCell(event: Event, img: UIImage? = nil){
+        
+        
+        
         self.event = event
         self.eventTitle.text = event.title.uppercased()
         self.eventLocationLabel.text = event.location.uppercased()
@@ -52,23 +57,28 @@ class EventCell: UITableViewCell {
         if img != nil {
             self.eventImageView.image = img
         } else {
-            let ref = FIRStorage.storage().reference(forURL: event.eventImageUrl)
-            ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
+            if event.eventImageUrl == nil {
                 
-                if error != nil {
-                    print("JASE: Unable to download image from Firebase Storage")
-                } else {
-                    print("JASE: Image downloaded from Firebase")
-                    //print(event.date)
-                    if let imgData = data {
-                        if let img  = UIImage(data: imgData) {
-                            self.eventImageView.image = img
-                            EventTableVC.imageCache.setObject(img, forKey: event.eventImageUrl as AnyObject)
+            } else {
+                let ref = FIRStorage.storage().reference(forURL: event.eventImageUrl!)
+                ref.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
+                    
+                    if error != nil {
+                        print("JASE: Unable to download image from Firebase Storage")
+                    } else {
+                        print("JASE: Image downloaded from Firebase")
+                        //print(event.date)
+                        if let imgData = data {
+                            if let img  = UIImage(data: imgData) {
+                                self.eventImageView.image = img
+                                EventTableVC.imageCache.setObject(img, forKey: event.eventImageUrl as AnyObject)
+                            }
                         }
                     }
-                }
-                
-            })
+                    
+                })
+            }
+            
         }
         
         

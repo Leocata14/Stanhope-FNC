@@ -11,7 +11,6 @@
 		BF4C22071E39A77900938EF2 /* FinalMatchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */; };
 		BF4C22091E39B0F800938EF2 /* FinalMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C22081E39B0F800938EF2 /* FinalMatch.swift */; };
 		BF4C220D1E39C2B800938EF2 /* FinalsRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C220C1E39C2B800938EF2 /* FinalsRound.swift */; };
-		BF5290661E4E8292004DF19B /* LoaderOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5290651E4E8292004DF19B /* LoaderOverlay.swift */; };
 		BF5933151E395EB10015428B /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933141E395EB10015428B /* EventDetailVC.swift */; };
 		BF5933171E3966130015428B /* EventDetailTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5933161E3966130015428B /* EventDetailTableVC.swift */; };
 		BF59331F1E397A800015428B /* WebViewDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF59331E1E397A800015428B /* WebViewDetailVC.swift */; };
@@ -56,6 +55,22 @@
 		BF75D7C91E360F2C0060F0AA /* MoreTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7C81E360F2C0060F0AA /* MoreTableVC.swift */; };
 		BF75D7CB1E361B170060F0AA /* SocialNetworks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75D7CA1E361B170060F0AA /* SocialNetworks.swift */; };
 		BFA88B661E51C8E600389F81 /* AddRoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88B651E51C8E600389F81 /* AddRoundVC.swift */; };
+		BFA88B681E53057400389F81 /* AddMatchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88B671E53057400389F81 /* AddMatchVC.swift */; };
+		BFA88B951E64172500389F81 /* LoadingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88B941E64172500389F81 /* LoadingTableView.swift */; };
+		BFA88B971E68D75600389F81 /* ImagePickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88B961E68D75600389F81 /* ImagePickerHelper.swift */; };
+		BFA88B991E68DBAE00389F81 /* EditProfileTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88B981E68DBAE00389F81 /* EditProfileTableVC.swift */; };
+		BFA88BA11E68F95400389F81 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA88B9E1E68F95400389F81 /* FBShimmeringLayer.m */; };
+		BFA88BA21E68F95400389F81 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BA01E68F95400389F81 /* FBShimmeringView.m */; };
+		BFA88BA51E69167400389F81 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BA41E69167400389F81 /* AddEventVC.swift */; };
+		BFA88BAF1E69932500389F81 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA88BAD1E69932500389F81 /* News.storyboard */; };
+		BFA88BB11E69935F00389F81 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA88BB01E69935F00389F81 /* Events.storyboard */; };
+		BFA88BB41E69939700389F81 /* MatchCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA88BB21E69939700389F81 /* MatchCenter.storyboard */; };
+		BFA88BB61E6B7D4D00389F81 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BB51E6B7D4D00389F81 /* WelcomeVC.swift */; };
+		BFA88BBA1E6D56DE00389F81 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BB91E6D56DE00389F81 /* SegueFromLeft.swift */; };
+		BFA88BBC1E6D57B400389F81 /* UnwindSegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BBB1E6D57B400389F81 /* UnwindSegueFromLeft.swift */; };
+		BFA88BBE1E6D5B9800389F81 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BBD1E6D5B9800389F81 /* SignUpVC.swift */; };
+		BFA88BC01E6D6B0A00389F81 /* NameAndPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BBF1E6D6B0A00389F81 /* NameAndPasswordVC.swift */; };
+		BFA88BC21E6D762700389F81 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA88BC11E6D762700389F81 /* SignInVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +78,6 @@
 		BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FinalMatchCell.xib; sourceTree = "<group>"; };
 		BF4C22081E39B0F800938EF2 /* FinalMatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalMatch.swift; sourceTree = "<group>"; };
 		BF4C220C1E39C2B800938EF2 /* FinalsRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalsRound.swift; sourceTree = "<group>"; };
-		BF5290651E4E8292004DF19B /* LoaderOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoaderOverlay.swift; sourceTree = "<group>"; };
 		BF5290671E4FD159004DF19B /* Stanhope FNC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Stanhope FNC.entitlements"; sourceTree = "<group>"; };
 		BF5933141E395EB10015428B /* EventDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
 		BF5933161E3966130015428B /* EventDetailTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailTableVC.swift; sourceTree = "<group>"; };
@@ -111,6 +125,27 @@
 		BF75D7C81E360F2C0060F0AA /* MoreTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTableVC.swift; sourceTree = "<group>"; };
 		BF75D7CA1E361B170060F0AA /* SocialNetworks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialNetworks.swift; sourceTree = "<group>"; };
 		BFA88B651E51C8E600389F81 /* AddRoundVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRoundVC.swift; sourceTree = "<group>"; };
+		BFA88B671E53057400389F81 /* AddMatchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMatchVC.swift; sourceTree = "<group>"; };
+		BFA88B941E64172500389F81 /* LoadingTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingTableView.swift; sourceTree = "<group>"; };
+		BFA88B961E68D75600389F81 /* ImagePickerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerHelper.swift; sourceTree = "<group>"; };
+		BFA88B981E68DBAE00389F81 /* EditProfileTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileTableVC.swift; sourceTree = "<group>"; };
+		BFA88B9B1E68F95400389F81 /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
+		BFA88B9C1E68F95400389F81 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		BFA88B9D1E68F95400389F81 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		BFA88B9E1E68F95400389F81 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		BFA88B9F1E68F95400389F81 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		BFA88BA01E68F95400389F81 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		BFA88BA31E68F97B00389F81 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		BFA88BA41E69167400389F81 /* AddEventVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
+		BFA88BAE1E69932500389F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/News.storyboard; sourceTree = "<group>"; };
+		BFA88BB01E69935F00389F81 /* Events.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		BFA88BB31E69939700389F81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MatchCenter.storyboard; sourceTree = "<group>"; };
+		BFA88BB51E6B7D4D00389F81 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
+		BFA88BB91E6D56DE00389F81 /* SegueFromLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
+		BFA88BBB1E6D57B400389F81 /* UnwindSegueFromLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegueFromLeft.swift; sourceTree = "<group>"; };
+		BFA88BBD1E6D5B9800389F81 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		BFA88BBF1E6D6B0A00389F81 /* NameAndPasswordVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameAndPasswordVC.swift; sourceTree = "<group>"; };
+		BFA88BC11E6D762700389F81 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		E4079F8474810B45D87E2CF3 /* Pods-Stanhope FNC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stanhope FNC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stanhope FNC/Pods-Stanhope FNC.debug.xcconfig"; sourceTree = "<group>"; };
 		FE271A8AECA0A4A189BA59C5 /* Pods_Stanhope_FNC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stanhope_FNC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,11 +200,16 @@
 				BF5E03131E2E266E0006EECF /* Controller */,
 				BF5E02FE1E2E264A0006EECF /* AppDelegate.swift */,
 				BF5E03021E2E264A0006EECF /* Main.storyboard */,
+				BFA88BB21E69939700389F81 /* MatchCenter.storyboard */,
+				BFA88BB01E69935F00389F81 /* Events.storyboard */,
+				BFA88BAD1E69932500389F81 /* News.storyboard */,
 				BF4C22061E39A77900938EF2 /* FinalMatchCell.xib */,
 				BF5E03081E2E264A0006EECF /* Assets.xcassets */,
 				BF5E030A1E2E264A0006EECF /* LaunchScreen.storyboard */,
 				BF5E030D1E2E264A0006EECF /* Info.plist */,
 				BF5E03051E2E264A0006EECF /* Stanhope_FNC.xcdatamodeld */,
+				BFA88B9A1E68F95400389F81 /* FBShimmering */,
+				BFA88BA31E68F97B00389F81 /* Bridging-Header.h */,
 			);
 			path = "Stanhope FNC";
 			sourceTree = "<group>";
@@ -177,6 +217,7 @@
 		BF5E03131E2E266E0006EECF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BFA88BBD1E6D5B9800389F81 /* SignUpVC.swift */,
 				BF5E03001E2E264A0006EECF /* ViewController.swift */,
 				BF5E03221E2F597F0006EECF /* NewsTableVC.swift */,
 				BF75D7A01E30CD3A0060F0AA /* NewsDetailVC.swift */,
@@ -190,6 +231,12 @@
 				BF59331E1E397A800015428B /* WebViewDetailVC.swift */,
 				BF5933221E3B17700015428B /* LadderDetailCollectionVC.swift */,
 				BFA88B651E51C8E600389F81 /* AddRoundVC.swift */,
+				BFA88B671E53057400389F81 /* AddMatchVC.swift */,
+				BFA88B981E68DBAE00389F81 /* EditProfileTableVC.swift */,
+				BFA88BA41E69167400389F81 /* AddEventVC.swift */,
+				BFA88BB51E6B7D4D00389F81 /* WelcomeVC.swift */,
+				BFA88BBF1E6D6B0A00389F81 /* NameAndPasswordVC.swift */,
+				BFA88BC11E6D762700389F81 /* SignInVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -207,6 +254,7 @@
 				BF5933201E3AFCD20015428B /* FinalMatchCell.swift */,
 				BF5933241E3B17B20015428B /* LadderCollectionViewCell.swift */,
 				BF5933261E3B181E0015428B /* LadderCollectionViewLayout.swift */,
+				BFA88B941E64172500389F81 /* LoadingTableView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -231,7 +279,9 @@
 				BF5E031E1E2E2FDA0006EECF /* DataService.swift */,
 				BF5E03201E2E32920006EECF /* Constants.swift */,
 				BF75D7CA1E361B170060F0AA /* SocialNetworks.swift */,
-				BF5290651E4E8292004DF19B /* LoaderOverlay.swift */,
+				BFA88B961E68D75600389F81 /* ImagePickerHelper.swift */,
+				BFA88BB91E6D56DE00389F81 /* SegueFromLeft.swift */,
+				BFA88BBB1E6D57B400389F81 /* UnwindSegueFromLeft.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -248,6 +298,19 @@
 				BF75D7A81E30D2660060F0AA /* Dosis-SemiBold.otf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		BFA88B9A1E68F95400389F81 /* FBShimmering */ = {
+			isa = PBXGroup;
+			children = (
+				BFA88B9B1E68F95400389F81 /* FBShimmering-Prefix.pch */,
+				BFA88B9C1E68F95400389F81 /* FBShimmering.h */,
+				BFA88B9D1E68F95400389F81 /* FBShimmeringLayer.h */,
+				BFA88B9E1E68F95400389F81 /* FBShimmeringLayer.m */,
+				BFA88B9F1E68F95400389F81 /* FBShimmeringView.h */,
+				BFA88BA01E68F95400389F81 /* FBShimmeringView.m */,
+			);
+			path = FBShimmering;
 			sourceTree = "<group>";
 		};
 		D70A0A580B2F3C42C1F8A42F /* Pods */ = {
@@ -329,12 +392,15 @@
 			files = (
 				BF5E03191E2E277D0006EECF /* GoogleService-Info.plist in Resources */,
 				BF75D7B41E3240FF0060F0AA /* Dosis-Regular.otf in Resources */,
+				BFA88BAF1E69932500389F81 /* News.storyboard in Resources */,
 				BF75D7B51E3240FF0060F0AA /* Dosis-SemiBold.otf in Resources */,
 				BF75D7B11E3240FF0060F0AA /* Dosis-ExtraLight.otf in Resources */,
 				BF5E030C1E2E264A0006EECF /* LaunchScreen.storyboard in Resources */,
 				BF5E03091E2E264A0006EECF /* Assets.xcassets in Resources */,
 				BF75D7B31E3240FF0060F0AA /* Dosis-Medium.otf in Resources */,
 				BF5E03041E2E264A0006EECF /* Main.storyboard in Resources */,
+				BFA88BB41E69939700389F81 /* MatchCenter.storyboard in Resources */,
+				BFA88BB11E69935F00389F81 /* Events.storyboard in Resources */,
 				BF75D7B21E3240FF0060F0AA /* Dosis-Light.otf in Resources */,
 				BF75D7B01E3240F80060F0AA /* Dosis-ExtraBold.otf in Resources */,
 				BF4C22071E39A77900938EF2 /* FinalMatchCell.xib in Resources */,
@@ -404,33 +470,45 @@
 				BF5E031D1E2E2D8D0006EECF /* LargeButton.swift in Sources */,
 				BF75D7BD1E32D7780060F0AA /* LaddersVC.swift in Sources */,
 				BF5E03231E2F597F0006EECF /* NewsTableVC.swift in Sources */,
+				BFA88BBC1E6D57B400389F81 /* UnwindSegueFromLeft.swift in Sources */,
 				BF5E03251E30BAD10006EECF /* News.swift in Sources */,
 				BF5933251E3B17B20015428B /* LadderCollectionViewCell.swift in Sources */,
 				BF75D7C11E32E05B0060F0AA /* GradeCell.swift in Sources */,
 				BF75D7C51E35FBC50060F0AA /* EventCell.swift in Sources */,
+				BFA88B681E53057400389F81 /* AddMatchVC.swift in Sources */,
+				BFA88BA51E69167400389F81 /* AddEventVC.swift in Sources */,
 				BF5E03271E30BB5E0006EECF /* NewsCell.swift in Sources */,
 				BF5E03011E2E264A0006EECF /* ViewController.swift in Sources */,
 				BFA88B661E51C8E600389F81 /* AddRoundVC.swift in Sources */,
 				BF4C220D1E39C2B800938EF2 /* FinalsRound.swift in Sources */,
 				BF5933211E3AFCD20015428B /* FinalMatchCell.swift in Sources */,
+				BFA88BBA1E6D56DE00389F81 /* SegueFromLeft.swift in Sources */,
+				BFA88BC01E6D6B0A00389F81 /* NameAndPasswordVC.swift in Sources */,
 				BF75D7AE1E30D6590060F0AA /* RoundsTableVC.swift in Sources */,
 				BF75D7AA1E30D4940060F0AA /* RoundCell.swift in Sources */,
+				BFA88BA11E68F95400389F81 /* FBShimmeringLayer.m in Sources */,
 				BF75D7B71E32BA8A0060F0AA /* Match.swift in Sources */,
 				BF5E031F1E2E2FDA0006EECF /* DataService.swift in Sources */,
+				BFA88BC21E6D762700389F81 /* SignInVC.swift in Sources */,
 				BF75D7C71E35FD130060F0AA /* EventTableVC.swift in Sources */,
 				BF75D7A11E30CD3A0060F0AA /* NewsDetailVC.swift in Sources */,
 				BF5933171E3966130015428B /* EventDetailTableVC.swift in Sources */,
 				BF5933151E395EB10015428B /* EventDetailVC.swift in Sources */,
+				BFA88BB61E6B7D4D00389F81 /* WelcomeVC.swift in Sources */,
 				BF5E03211E2E32920006EECF /* Constants.swift in Sources */,
 				BF75D7C91E360F2C0060F0AA /* MoreTableVC.swift in Sources */,
 				BF75D7AC1E30D4F20060F0AA /* Round.swift in Sources */,
 				BF75D7BB1E32C21A0060F0AA /* MatchCell.swift in Sources */,
 				BF5E02FF1E2E264A0006EECF /* AppDelegate.swift in Sources */,
+				BFA88BA21E68F95400389F81 /* FBShimmeringView.m in Sources */,
+				BFA88BBE1E6D5B9800389F81 /* SignUpVC.swift in Sources */,
+				BFA88B951E64172500389F81 /* LoadingTableView.swift in Sources */,
+				BFA88B971E68D75600389F81 /* ImagePickerHelper.swift in Sources */,
 				BF5E031B1E2E2BFC0006EECF /* LargeTextField.swift in Sources */,
 				BF75D7BF1E32D9520060F0AA /* Grade.swift in Sources */,
 				BF59331F1E397A800015428B /* WebViewDetailVC.swift in Sources */,
+				BFA88B991E68DBAE00389F81 /* EditProfileTableVC.swift in Sources */,
 				BF5933231E3B17700015428B /* LadderDetailCollectionVC.swift in Sources */,
-				BF5290661E4E8292004DF19B /* LoaderOverlay.swift in Sources */,
 				BF75D7C31E35FBA00060F0AA /* Event.swift in Sources */,
 				BF75D7B91E32BBDE0060F0AA /* RoundDetailTableVC.swift in Sources */,
 			);
@@ -453,6 +531,22 @@
 				BF5E030B1E2E264A0006EECF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BFA88BAD1E69932500389F81 /* News.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFA88BAE1E69932500389F81 /* Base */,
+			);
+			name = News.storyboard;
+			sourceTree = "<group>";
+		};
+		BFA88BB21E69939700389F81 /* MatchCenter.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFA88BB31E69939700389F81 /* Base */,
+			);
+			name = MatchCenter.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -563,6 +657,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.jasonleocata.Stanhope-FNC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "$(SRCROOT)/Stanhope FNC/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -579,6 +674,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "au.com.jasonleocata.Stanhope-FNC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Stanhope FNC/Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -96,6 +96,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Kanna/Kanna.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyGif/SwiftyGif.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XMSegmentedControl/XMSegmentedControl.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -111,5 +112,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Kanna/Kanna.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyGif/SwiftyGif.framework"
   install_framework "$BUILT_PRODUCTS_DIR/XMSegmentedControl/XMSegmentedControl.framework"
 fi

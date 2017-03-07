@@ -12,19 +12,11 @@ import FirebaseAuth
 import SwiftKeychainWrapper
 
 class MoreTableVC: UITableViewController {
-
-    @IBOutlet weak var profileImg: UIImageView!
     
     @IBOutlet var moreTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        self.profileImg.layer.cornerRadius = self.profileImg.frame.size.width / 2
-        
-        self.profileImg.clipsToBounds = true
-        //moreTableView.delegate = self
-        //moreTableView.dataSource = self
 
     }
     

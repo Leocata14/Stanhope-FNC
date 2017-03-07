@@ -14,7 +14,7 @@ import XMSegmentedControl
 class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate, XMSegmentedControlDelegate {
     
     var rounds = [Round]()
-    var currRound: Round?
+    var tappedRound: Round?
     
     var finalsRounds = [FinalsRound]()
     var finalsMatches = [FinalMatch]()
@@ -57,10 +57,13 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
         
         getFinals()
         
+        
+        
         DataService.ds.REF_ROUNDS.observe(.value, with: { (snapshot) -> Void in
             
             self.rounds = []
             if let snapshots = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                //self.roundsTableView.showLoadingIndicator()
                 for snap in snapshots {
                     print("SNAP: \(snap)")
                     if let roundsDict = snap.value as? Dictionary<String,AnyObject> {
@@ -77,6 +80,7 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
                 }
             }
             self.roundsTableView.reloadData()
+            //self.roundsTableView.hideLoadingIdicator()
         })
         
         
@@ -204,8 +208,9 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
             
             print("edit tapped")
             print("key: \(self.rounds[indexPath.row].roundKey)")
+            self.tappedRound = self.rounds[indexPath.row]
             //self.currRound = self.rounds[indexPath.row]
-            //self.performSegueWithIdentifier(SEGUE_EDIT_ROUND, sender: nil)
+            self.performSegue(withIdentifier: SEGUE_EDIT_ROUND, sender: nil)
         }
         
         edit.backgroundColor = UIColor.orange
@@ -253,9 +258,21 @@ class RoundsTableVC: UIViewController, UITableViewDataSource,UITableViewDelegate
                 destinationVC.round = tappedRound
                 roundsTableView.deselectRow(at: indexPath, animated: true)
             }
+        } else if segue.identifier == SEGUE_EDIT_ROUND {
+            let destinationVC = segue.destination as! AddRoundVC
+            if let barButton = sender as? UIBarButtonItem {
+                destinationVC.round = nil
+            } else {
+                destinationVC.round = tappedRound
+            }
+            
+            //roundsTableView.deselectRow(at: indexPath, animated: true)
         }
     }
     
+    @IBAction func addButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: SEGUE_EDIT_ROUND, sender: nil)
+    }
     
     
 

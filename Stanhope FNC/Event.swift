@@ -15,7 +15,7 @@ class Event {
     private var _location: String!
     private var _description: String!
     private var _eventKey: String!
-    private var _eventImageUrl: String!
+    private var _eventImageUrl: String?
     
     var eventKey: String {
         return _eventKey
@@ -37,7 +37,7 @@ class Event {
         return _description
     }
     
-    var eventImageUrl: String {
+    var eventImageUrl: String? {
         return _eventImageUrl
     }
     

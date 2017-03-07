@@ -20,12 +20,20 @@ class NewsCell: UITableViewCell {
     var news: News!
     //var request: Request?
     
+    var shimmeringView: FBShimmeringView!
+    
+    var titleShimmeringView: FBShimmeringView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         
+
         
+//        self.titleShimmeringView = FBShimmeringView(frame: title.frame)
+//        self.titleShimmeringView.backgroundColor = UIColor.gray
+//        self.titleShimmeringView.contentView = title
+//        self.addSubview(titleShimmeringView)
     }
     
     override func draw(_ rect: CGRect) {
@@ -47,6 +55,10 @@ class NewsCell: UITableViewCell {
         let dateString = NewsDateToString(date: convertedDate)
         self.publishedDate.text = dateString
         
+        self.shimmeringView = FBShimmeringView(frame: newsImg.frame)
+        self.shimmeringView.backgroundColor = UIColor.lightGray
+        self.shimmeringView.contentView = newsImg
+        self.addSubview(shimmeringView)
         
         if news.imgUrl != nil {
             
@@ -55,10 +67,11 @@ class NewsCell: UITableViewCell {
                 self.newsImg.image = img
                 
             } else {
- 
+                shimmeringView.isShimmering = true
                 var request = Alamofire.request(news.imgUrl!).responseImage { response in
                     if let image  = response.result.value {
                         self.newsImg.image = image
+                        self.shimmeringView.isShimmering = false
                     }
                 }
 

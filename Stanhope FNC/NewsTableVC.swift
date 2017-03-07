@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import UserNotifications
 
 class NewsTableVC: UITableViewController {
     
@@ -17,21 +18,26 @@ class NewsTableVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        
         DataService.ds.checkAdminUser()
         
-        if news.count == 0 {
-            LoaderOverlay.shared.show()
-        } else {
-            LoaderOverlay.shared.hide()
-        }
-        
-        
+
+
         downloadNewsItems()
         
         tableView.delegate = self
         tableView.dataSource = self
         
         tableView.estimatedRowHeight = 285
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert,.badge,.sound], completionHandler: { (granted,error) in
+            if granted {
+                print("JASE: Notification access granted")
+            } else {
+                print("JASE Error: \(error?.localizedDescription)")
+            }
+        })
         
         self.tableView.reloadData()
 
@@ -73,7 +79,6 @@ class NewsTableVC: UITableViewController {
         
         DataService.ds.REF_NEWS.keepSynced(true)
         print("JASE: DONE")
-        LoaderOverlay.shared.hide()
     }
     
     
@@ -97,6 +102,8 @@ class NewsTableVC: UITableViewController {
         let new = news[indexPath.row]
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "NewsCell") as? NewsCell {
+            
+            
             
             var img: UIImage?
             
