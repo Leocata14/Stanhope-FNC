@@ -64,6 +64,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PureLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftKeychainWrapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,17 +97,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>15C31B1095634C91D727D01EEDD792E2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3E7F712AB0A6C2512F16183A3BECE005</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3EB90AD0F317660ED1C9F2C1ED4EBDF4</key>
+		<key>1C9460BE7FF85D13669F57C56715CFC4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -112,17 +107,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>48A892EEE29CC031FD446CAADEAC151A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4D10E4FF5A483B852B47CCA0B994E340</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<key>6950BA3D7B16DE333823B3E66F458A69</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>947D7B31389E62BD18332F47B7AD15B8</key>
+		<key>78C42AD5E1AA7349F3F7385AA5B1D9BF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83F56F456CC23AD0C3F40DC8270549AB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,17 +162,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C958EDE6C21DA590B8659505EAE26402</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E396A93E4C79B22B7816E9F02F62ECED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>EE774F234E810C0DD8263855D7A1A166</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F948571A5B0E170B5431444C890558FC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

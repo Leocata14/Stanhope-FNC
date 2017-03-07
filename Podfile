@@ -22,5 +22,6 @@ pod 'XMSegmentedControl'
 pod 'Kanna', '~> 2.1.0'
 pod 'Eureka', '~> 2.0.0-beta.1'
 pod 'SwiftyGif'
+pod 'PureLayout'
 
 end

@@ -17,6 +17,10 @@ class RoundDetailTableVC: UITableViewController {
     var roundMatches: Dictionary<String,AnyObject> = [:]
     var matchKeys: Array = [""]
     
+    private let image = UIImage(named: "toAdd")!.withRenderingMode(.alwaysTemplate)
+    private let topMessage = "No Matches Completed"
+    private let bottomMessage = "All matches will show up here when added to the application."
+    
     var tappedMatch: Match?
     
     @IBOutlet weak var matchesTableView: UITableView!
@@ -35,9 +39,15 @@ class RoundDetailTableVC: UITableViewController {
         
         getMatches()
         
+        setupEmptyBackgroundView()
         
         
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
+    }
+    
+    func setupEmptyBackgroundView() {
+        let emptyBackgroundView = EmptyBackgroundView(image: image, top: topMessage, bottom: bottomMessage)
+        matchesTableView.backgroundView = emptyBackgroundView
     }
     
     func getMatches(){
@@ -120,6 +130,13 @@ class RoundDetailTableVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        if matches.count == 0 {
+            matchesTableView.backgroundView?.isHidden = false
+            matchesTableView.alwaysBounceVertical = false
+        } else {
+            matchesTableView.alwaysBounceVertical = false
+            matchesTableView.backgroundView?.isHidden = true
+        }
         return matches.count
     }
     
@@ -137,6 +154,10 @@ class RoundDetailTableVC: UITableViewController {
             return MatchCell()
         }
     }
+    
+    private var rows = [String]()
+    
+    
     
     @IBAction func addButtonTapped(_ sender: Any) {
         self.performSegue(withIdentifier: SEGUE_EDIT_MATCH, sender: nil)
